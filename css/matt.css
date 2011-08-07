@@ -1,0 +1,175 @@
+body {
+    font-family:   "Bitstream Vera Sans", arial, helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #666;
+    color: #fff;
+    line-height: 1.5;
+}
+
+a:link { 
+    color:  #fb8b00; 
+    text-decoration: none;
+    border-bottom: 1px dotted #fb8b00;
+}
+a:visited { 
+    color: #fb8b00;
+    text-decoration: none;
+    border-bottom: 1px dotted #fb8b00;
+}
+a:hover { 
+    color: #fff; 
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+}
+a:active { 
+    color:#fff; 
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    display: inline;
+    line-height: 1.2;
+}
+
+
+li {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+li ul li {
+    padding: 0em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li ul {
+    margin-top: 1.5em;
+    margin-left: 2em;
+}
+
+a img {
+    border: none;
+}
+
+
+#picture {
+    border: none;
+}
+
+#title {
+    text-align: center;
+    margin: 5pt;
+
+}
+
+
+
+#navbar ul
+{
+    padding: .2em 0;
+    margin: auto;
+    list-style-type: none;
+    text-align:center;
+    width: 800px;
+    font-weight: bolder;
+    font-size: .8em;
+    text-transform: uppercase;
+    border-top: 1pt solid #fb8b00;
+    border-bottom: 1pt solid #fb8b00;
+    line-height: normal;
+}
+
+#navbar li { 
+    display: inline;
+}
+
+#navbar #active a { 
+    background-color:  #fb8b00;
+    color: #FFF;
+    margin: 0;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fb8b00;
+    padding: .2em 1em;
+    border: none;
+}
+
+#navbar a:hover {
+    background-color:  #fb8b00;
+    color: #FFF;
+}
+
+#content {
+    margin: auto;
+    padding: 20px;
+    width: 780px;
+}
+
+#content img {
+    float: left;
+    border: 0;
+    margin-right: 3em;
+    margin-bottom: 1em;
+}
+
+#email:before{
+    content:"blackwel\40 fas.harvard.edu"
+}
+
+#contact {
+
+}
+
+#footer {
+    margin: auto;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    padding: 2px;
+    width: 780px;
+    border-top: 1pt dotted white;
+    font-size: .8em;
+    clear: left;
+}
+
+.vcard {
+    text-align: left;
+    clear: none;
+}
+
+#valid {
+    float: right;
+    line-height: 1.1;
+}
+
+.project-title {
+    /*border-top: 1px solid #fb8b00;
+    border-bottom: 1px solid #fb8b00;*/
+    color: #fff;
+    padding: 2px;
+    background-color: #888;
+    font-size: 110%;
+    /*text-transform: uppercase;*/
+    width: 100%;
+    font-weight: bold;
+}
+
+.project-title a {
+    color: white;
+    border: none;
+}
+
+.project {
+    padding-bottom: 2em;
+}
+
+.project img {
+    padding-top: 10px;
+}
+
+.project li {
+    margin: .2em;
+}

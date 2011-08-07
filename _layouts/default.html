@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Matthew Blackwell - {{page.title}}</title>
+  <link rel="stylesheet" href="css/matt.css" type="text/css"/> 
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <meta name="verify-v1"
+  content="9Xe/VRrH9KtxWOHTVwXG0NySvJl7DBMIpx3sPkIOJaM=" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18844736-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div id="title">
+<a href="index.html" id="picture"><img src="images/title-banner2.png"
+				       class="title" alt="Matthew Blackwell"/></a>
+</div>
+
+
+<div id="navbar">
+<ul>
+<li{% if page.slug == "home" %} id="active"{% endif %}>
+  <a href="index.html"{% if page.slug == "home" %} id="current"{% endif%}>
+    Home
+  </a>
+</li>
+
+<li{% if page.slug == "writing" %} id="active"{% endif %}>
+  <a href="writing.html"{% if page.slug == "writing" %} id="current"{% endif%}>
+    Writing
+  </a>
+</li>
+
+<li{% if page.slug == "software" %} id="active"{% endif %}>
+  <a href="software.html"{% if page.slug == "software" %} id="current"{% endif%}>
+    Software
+  </a>
+</li>
+
+<li{% if page.slug == "teaching" %} id="active"{% endif %}>
+  <a href="teaching.html"{% if page.slug == "teaching" %} id="current"{% endif%}>
+    Teaching
+  </a>
+</li>
+
+<li><a href="blackwell-cv.pdf">C.V.</a></li>
+</ul>
+</div>
+
+<div id="content">
+{{content}}
+</div>
+
+
+<div id="footer">
+  <div id="valid">
+    <p><a href="http://validator.w3.org/check?uri=referer">(X)HTML 1.0</a></p>
+    <p><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS 2.1</a></p>
+  </div>
+  <div class="vcard">
+    <div class="fn">Matthew Blackwell</div>
+    <div class="org">
+      <div class="organization-unit">Institute for Quantitative Social Science</div>
+      <div class="organization-name">Harvard University</div>
+    </div>
+    <div class="address">
+      <div class="street-address">1737 Cambridge Street</div>
+      <span class="locality">Cambridge</span>, 
+      <abbr class="region" title="Massachussetts">MA</abbr> 
+      <span class="postal-code">02138</span>
+    </div>
+    <div>    
+      email: <a class="email" href="mailto:mblackwell@iq.harvard.edu">mblackwell@iq.harvard.edu</a>
+    </div>
+    <div>
+      url: <a class="url"
+      href="http://people.fas.harvard.edu/~blackwel/">http://people.fas.harvard.edu/~blackwel/</a>
+    </div>
+  </div>
+</div> 
+</body>
+</html>
