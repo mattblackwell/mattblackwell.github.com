@@ -1,0 +1,208 @@
+---
+layout: default
+slug: latex
+title: LaTeX Setup and Tutorial
+---
+
+<h1>LaTeX Setup and Tutorial</h1>
+<br /><br />
+<h2>Introduction</h2>
+
+<p>LaTeX is a markup language, which means it finds little snippets
+of code in a plain text document and uses that to typeset the text. If
+you're familiar with HTML, this is exactly what LaTeX is like. If
+that analogy makes you more confused, perhaps think about it like this:
+imagine the bits of code in your document are like a book editor's red
+pen marks, indicating to the publisher how to print the text.
+When you run LaTeX on your document, it is like sending your
+manuscript to the printer, with instructions for how to print. They
+send it back to you as a pdf. </p>
+
+<p> So, great. What do we need? First we need a way to make the
+manuscript (in the jargon: a tex file (sound like "tech")). Second
+we need the typesetter/printer to send the manuscript to (in the 
+jargon: a LaTeX compiler). How you accomplish both of these steps
+depends on your operating system. The instructions below will guide
+you through the installation of both the compiler and the editor for
+both <a href="#windows">Windows</a> and <a href="#mac">Macs</a>. </p>
+
+<p> To sum up: </p>
+<ul>
+<li> The <b>editor</b> helps you write your <b>.tex file</b> with LaTeX code. </li>
+<li> The <b>compiler</b> reads your .tex file and makes a pretty
+     document. </li>
+</ul>
+<a name="windows"></a><h2>Windows</h2>
+<br /><br />
+<h3>the compiler - MiKTeX</h3>
+<p>The Windows LaTeX compiler is called MiKTeX and it will give your 
+computer the power to compile .tex files. It also manages LaTeX packages,
+which work very similarly to R packages. MiKTeX is a little scary, 
+but hopefully once you install it, you won't have to deal with it
+a whole lot. Think of it as setting up a really fast typesetter 
+in your computer. </p>
+<ol>
+
+  <li>Go to <a href="http://www.miktex.org/2.7/Setup.aspx">www.miktex.org/2.7/Setup.aspx</a>.
+  </li>
+  <li>Download the "Basic MiKTeX 2.7" Installer</li>
+  <li>Open up the installer and use all the default settings</li>
+</ol>
+
+<h3>the (free) editor - Texmaker</h3>
+<p>The dual-edged sword aspect of LaTeX is that the .tex files are
+actually just plain text. So, you could just use Notepad or Wordpad
+or Word or some other program. These are fine, but there are other 
+programs that will greatly expand your productivity in LaTeX. For 
+Windows, we are going to recommend the free editor Texmaker. It has
+fun stuff like syntax highlighting and buttons on the side 
+with all of the math symbols, so you don't have to look them up every
+time you write up a problem set. In addition, there are menu buttons 
+and keyboard shortcuts that allow you to compile the .tex file. 
+So, to install:
+</p>
+
+<ol>
+
+  <li>Go to&nbsp;<a href="http://www.xm1math.net/texmaker/download.html">http://www.xm1math.net/texmaker/download.html</a></li>
+
+  <li>Click on <strong>Executable file for win32
+systems :</strong>&nbsp;<a href="http://www.xm1math.net/texmaker/texmakerwin32_install.exe">texmakerwin32_install.exe</a>.</li>
+
+  <li>Run the installer and use all of the default settings.</li>
+
+</ol>
+Now that we have an editor, we can fire up some LaTeX and get to
+your classic 
+<a href="http://en.wikipedia.org/wiki/Hello_world_program">hello 
+world program</a>. Start by opening Texmaker and copying into it 
+the following text:
+
+
+
+<div style="border:2px dotted gray;padding:1em;margin-bottom:1em;">
+<pre>
+\documentclass{article}
+\title{Worlds Apart: Hello Worlds in the Comparative Context}
+\author{Matt Blackwell}
+\begin{document}
+   \maketitle
+   Hello world!
+   $$f(x)=x^2$$
+\end{document}
+</pre>
+</div>
+Now: 
+
+<ol>
+    <li>Save the file in a convenient place as "helloworld.tex"</li>
+    <li>Click on the button labeled "PDFLAT" to run pdflatex</li>
+    <li>Click on the "View PDF" button to open Acrobat to view the resulting PDF</li>
+</ol>
+
+
+
+<a name="mac"></a><h2>Mac OS X</h2>
+<br /><br />
+<h3>the compiler - MacTeX</h3>
+<p>
+MacTeX is the basic Mac distribution of the LaTeX compiler. A bit of 
+a warning: the download for this is over 1GB, so it might take a bit.
+In addition, you have drive space limitations, you may want to consider
+one of the stripped down versions of MacTeX. Wonderfully, MacTeX
+installs a very slick editor called TeXShop. To obtain this compiler:
+</p>
+<ol>
+
+  <li>Go to&nbsp;<a href="http://tug.org/mactex/">http://tug.org/mactex/</a></li>
+
+  <li>Click and download: MacTeX.mpkg.zip</li>
+
+  <li>Unzip and run the MacTeX.mpkg file, keeping all the defaults.</li>
+
+</ol>
+
+
+<h3>the (free) editor - TeXShop</h3>
+
+<p>The dual-edged sword aspect of LaTeX is that the .tex files are
+actually just plain text. So, you could just use any old text 
+editor. These are fine, but there are other
+programs that will greatly expand your productivity in LaTeX. For
+Macs, we are going to recommend the editor that comes with MacTex,
+called TeXShop. It will ease the LaTeX editing and compiling 
+process. 
+</p>
+
+
+<p>Now that we have an editor, we can fire up some LaTeX and get to
+your classic
+<a href="http://en.wikipedia.org/wiki/Hello_world_program">hello
+world program</a>. Start by opening TexShop and copying into it
+the following text:</p>
+
+<div style="border:2px dotted gray;padding:1em;margin-bottom:1em;">
+<pre>
+\documentclass{article}
+\title{Worlds Apart: Hello Worlds in the Comparative Context}
+\author{Matt Blackwell}
+\begin{document}
+   \maketitle
+   Hello world!
+   $$f(x)=x^2$$
+\end{document}
+</pre>
+</div>
+Now:
+
+<ol>
+    <li>Save the file in a convenient place as "helloworld.tex"</li>
+    <li>Click on the button labeled "Typeset" to run the compiler</li>
+</ol>
+
+You should see a pdf file with a title and all that. 
+
+<h3>the (free) editor (ii) - Texmaker</h3>
+You may find TeXShop a bit intimidating. It doesn't have the helpful
+buttons for bold, italics, math symbols, etc. If you want these features,
+you can always download Texmaker for Macs and use that. To obtain it:
+
+<ol>
+
+  <li>Go to&nbsp;<a href="http://www.xm1math.net/texmaker/download.html">http://www.xm1math.net/texmaker/download.html</a></li>
+
+  <li>Download the zip file for Mac OS X.</li>
+  <li>Open the zip file and place the Texmaker application 
+      somewhere that suits you.</li>
+</ol>
+
+Once you have installed Texmaker, you can use the example in the 
+<a href="#windows">Windows</a> section to test out your installation. 
+
+<h2>Further Reading</h2>
+<p>There are a number of resources for LaTeX online. By a number, I mean
+a very high number. Walking yourself through an online tutorial is
+a good way to get familiar, but you'll probably learn LaTeX as you 
+trying to type up your problem sets. This can be a frustrating experience,
+but I think it's worth it in the long run. Even if you don't use any
+math, your paper will have a
+professional shine that makes some impact on the reader. </p>
+
+<p>If you do get stuck, try to find the answer on your own first. Google
+is your friend here. When I get stuck  on tables (which is often), I google: 
+"latex tables." I've found that googling "latex+myproblem" is a good
+way to answer almost any question. </p>
+
+<p>Some other pages that are often used are the following:</p>
+
+<ul>
+<li><a href="http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf">The Not So Short Introduction to LaTeX2e</a>, by Tobias Oetiker. Comprehensive, will answer almost any question you have.</li>
+
+<li><a href="http://www.andy-roberts.net/misc/latex/index.html">
+LaTeX Tutorials</a>, from Andy Roberts. You don't need to worry 
+about his section on "setting up LaTeX" but the rest is good, 
+especially for beginners.</li>
+
+
+
+</ul>
