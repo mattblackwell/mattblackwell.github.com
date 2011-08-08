@@ -152,9 +152,9 @@ a img {
     clear: none;
 }
 
-#valid {
+#sites {
     float: right;
-    line-height: 1.1;
+    text-align: right;
 }
 
 .project-title {
