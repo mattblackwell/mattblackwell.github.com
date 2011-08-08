@@ -1,5 +1,12 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url('images/raleway_thin.eot');
+	src: local('Raleway Thin'), local('Raleway'), url('images/raleway_thin.ttf') format('truetype');
+}   
+
+
 body {
-    font-family:  "Droid Sans", "Bitstream Vera Sans", arial, helvetica, sans-serif;
+    font-family:  "Droid Sans", "Bitstream Vera Sans", helvetica, arial, sans-serif;
     font-size: 14px;
     background-color: #1A1F1E;
     color: #fff;
