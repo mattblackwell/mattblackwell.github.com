@@ -3,43 +3,12 @@ layout: default
 title: Software
 slug: software
 ---
-<div class="project">
-<div class="project-title"><a href="http://gking.harvard.edu/amelia/">Amelia:
-    A package for missing data</a></div>
-<p> with <a href="http://tercer.bol.ucla.edu">James Honaker</a> and  <a href="http://gking.harvard.edu">Gary King</a></p>
-<p>
-Amelia is an <a href="http://www.r-project.org/">R</a> package for the
-    multiple imputation of incomplete data. Multiple imputation is a
-    method to overcome the computational problem of missing data while
-    maintaining good statistical properties. Amelia uses a
-    bootstrap-based algorithm which increases speed and robustness. In
-    addition, Amelia includes a graphical user interface which
-    requires no knowledge of R at all.
-</p>
-<ul>
-<li><a href="http://gking.harvard.edu/amelia">Amelia homepage</a></li>
-<li><a href="files/papers/amelia-polmeth.pdf">Slides</a> on multiple imputation and
-  Amelia from 2009 Summer Methods Meeting.</li>
-<li> Amelia is on <a href="http://crantastic.org/packages/Amelia">crantastic</a>.</li>
-</ul> 
-</div>
 
+{% for project in site.categories.software %}
 <div class="project">
-<div class="project-title"><a href="http://gking.harvard.edu/cem/">cem: Coarsened Exact
-    Matching</a></div>
-<p>
-with <a href="http://www.economia.unimi.it/iacus">Stefano Iacus</a>, 
-<a href="http://www.sp.units.it/Lists/Corpo%20docente/DispForm.aspx?ID=77">Giuseppe
-   Porro</a> and <a href="http://gking.harvard.edu">Gary King</a>
-</p>
-<p>
-<abbr title="Coarsened Exact Matching">cem</abbr> is a package for R
-    and Stata to implement the method of coarsened exact matching for
-    improving causal inferences and reducing model dependence. I
-    helped to write the Stata package. A Stata Journal article is
-    forthcoming. 
-</p>
-<ul>
-<li><a href="http://gking.harvard.edu/cem/">cem homepage</a></li>
-</ul>
+  <div class="project-title">
+    <a href={{project.url}}>{{project.title}}</a>
+  </div>
+{{project.content}}
 </div>
+{% endfor %}
