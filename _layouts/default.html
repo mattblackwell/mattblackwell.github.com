@@ -30,8 +30,8 @@
 <body>
 
 <div id="title">
-<a href="index.html" id="picture"><img src="images/title-banner2.png"
-				       class="title" alt="Matthew Blackwell"/></a>
+<a href="index.html" id="picture"><!-- <img src="images/title-banner2.png" -->
+				  <!--      class="title" alt="Matthew Blackwell"/> -->Matt Blackwell</a>
 </div>
 
 
@@ -45,13 +45,7 @@
 
 <li{% if page.slug == "writing" %} id="active"{% endif %}>
   <a href="writing.html"{% if page.slug == "writing" %} id="current"{% endif%}>
-    Writing
-  </a>
-</li>
-
-<li{% if page.slug == "software" %} id="active"{% endif %}>
-  <a href="software.html"{% if page.slug == "software" %} id="current"{% endif%}>
-    Software
+    Research
   </a>
 </li>
 
@@ -61,6 +55,11 @@
   </a>
 </li>
 
+<li{% if page.slug == "software" %} id="active"{% endif %}>
+  <a href="software.html"{% if page.slug == "software" %} id="current"{% endif%}>
+    Software
+  </a>
+</li>
 <li><a href="blackwell-cv.pdf">C.V.</a></li>
 </ul>
 </div>

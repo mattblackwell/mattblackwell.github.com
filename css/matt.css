@@ -1,20 +1,20 @@
 body {
-    font-family:   "Bitstream Vera Sans", arial, helvetica, sans-serif;
+    font-family:  "Droid Sans", "Bitstream Vera Sans", arial, helvetica, sans-serif;
     font-size: 14px;
-    background-color: #666;
+    background-color: #1A1F1E;
     color: #fff;
     line-height: 1.5;
 }
 
 a:link { 
-    color:  #fb8b00; 
+    color:  #93CCC6; 
     text-decoration: none;
-    border-bottom: 1px dotted #fb8b00;
+    border-bottom: 1px dotted #93CCC6;
 }
 a:visited { 
-    color: #fb8b00;
+    color: #93CCC6;
     text-decoration: none;
-    border-bottom: 1px dotted #fb8b00;
+    border-bottom: 1px dotted #93CCC6;
 }
 a:hover { 
     color: #fff; 
@@ -59,9 +59,10 @@ a img {
 }
 
 #title {
+    font-family: Raleway;
     text-align: center;
     margin: 5pt;
-
+    font-size: 6.5em;
 }
 
 
@@ -73,11 +74,10 @@ a img {
     list-style-type: none;
     text-align:center;
     width: 800px;
-    font-weight: bolder;
-    font-size: 1em;
-    text-transform: uppercase;
-    border-top: 1pt solid #fb8b00;
-    border-bottom: 1pt solid #fb8b00;
+    /*font-weight: 200;*/
+    font-size: 2em;
+    font-family: Raleway;
+    border-bottom: 1pt solid #93CCC6; 
     line-height: normal;
 }
 
@@ -86,21 +86,26 @@ a img {
 }
 
 #navbar #active a { 
-    background-color:  #fb8b00;
-    color: #FFF;
+    background-color: #93CCC6; 
+     color: #1A1F1E; 
     margin: 0;
 }
 
 #navbar li a {
     text-decoration: none;
-    color: #fb8b00;
+    color: #93CCC6;
     padding: .2em 1em;
     border: none;
 }
 
 #navbar a:hover {
-    background-color:  #fb8b00;
-    color: #FFF;
+    background-color:  #93CCC6;
+    color: #fff;
+}
+
+#navbar #active a:hover {
+    background-color:  #93CCC6;
+    color: #fff;
 }
 
 #content {
@@ -146,19 +151,20 @@ a img {
 }
 
 .project-title {
-    /*border-top: 1px solid #fb8b00;
-    border-bottom: 1px solid #fb8b00;*/
-    color: #fff;
+    border-bottom: 1px dotted #E3DFBA;
+    /*border-bottom: 1px solid #fb8b00;*/
+    color: #E3DFBA;
     padding: 2px;
-    background-color: #888;
-    font-size: 110%;
+    /* background-color: #E3DFBA; */
+    font-size: 150%;
+    font-family: Raleway;
     /*text-transform: uppercase;*/
     width: 100%;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .project-title a {
-    color: white;
+    color: #E3DFBA;
     border: none;
 }
 
