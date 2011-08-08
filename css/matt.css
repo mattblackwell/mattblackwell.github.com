@@ -2,7 +2,7 @@
     font-family: "Raleway";
     src: url("../images/raleway_thin.eot");
     src: local("Raleway"), url("../images/raleway_thin.ttf") format("truetype");
-}   
+}
 
 
 body {
@@ -66,7 +66,7 @@ a img {
 }
 
 #title {
-    font-family: "Raleway";
+    font-family: "Raleway", "Calibri", Verdana, sans-serif;
     text-align: center;
     margin: 5pt;
     font-size: 6.5em;
@@ -83,7 +83,7 @@ a img {
     width: 800px;
     /*font-weight: 200;*/
     font-size: 2em;
-    font-family: "Raleway";
+    font-family: "Raleway", "Calibri", Verdana, sans-serif;
     border-bottom: 1pt solid #93CCC6; 
     line-height: normal;
 }
@@ -164,7 +164,7 @@ a img {
     padding: 2px;
     /* background-color: #E3DFBA; */
     font-size: 150%;
-    font-family: Raleway;
+    font-family: Raleway, "Calibri", Verdana, sans-serif;
     /*text-transform: uppercase;*/
     width: 100%;
     /* font-weight: bold; */
