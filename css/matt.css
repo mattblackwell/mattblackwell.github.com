@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "Raleway Thin";
+    font-family: "Raleway";
     src: url("images/raleway_thin.eot") local("images/raleway_thin.eot");
-    src: url("images/raleway_thin.ttf") local("images/raleway_thin.ttf");
+    src: local("Raleway") url("images/raleway_thin.ttf") local("images/raleway_thin.ttf") format("truetype");
     font-weight: normal;
 }   
 
@@ -67,7 +67,7 @@ a img {
 }
 
 #title {
-    font-family: "Raleway Thin";
+    font-family: "Raleway";
     text-align: center;
     margin: 5pt;
     font-size: 6.5em;
@@ -84,7 +84,7 @@ a img {
     width: 800px;
     /*font-weight: 200;*/
     font-size: 2em;
-    font-family: "Raleway Thin";
+    font-family: "Raleway";
     border-bottom: 1pt solid #93CCC6; 
     line-height: normal;
 }
