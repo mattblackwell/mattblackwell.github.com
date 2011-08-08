@@ -1,0 +1,14 @@
+---
+layout: default
+slug: research
+title: Research
+---
+
+{% for project in site.categories.Research %}
+<div class="project">
+  <div class="project-title">
+    <a href={{project.url}}>{{project.title}}</a>
+  </div>
+{{project.content}}
+</div>
+{% endfor %}
