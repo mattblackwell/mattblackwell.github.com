@@ -204,3 +204,17 @@ a img {
 .project li {
     margin: .2em;
 }
+
+
+.mac .project-title,h1,h2,h3,h4,h5,h6,body {
+    font-weight: 300;
+}
+
+.mac #title {
+    font-weight: 100;
+}
+
+
+.mac #navbar ul {
+    font-weight: 300;
+}
