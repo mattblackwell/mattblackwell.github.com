@@ -2,7 +2,17 @@
 layout: default
 ---
 
-<div class="project">
-<div class="project-title">{{page.title}}</div>
+<div class="project span-24">
+  <div class="project-title span-24">
+    {{page.title}}
+  </div>
+{% if page.image %}
+<div class="span-8">
+<img src={{page.image}} alt={{page.image-alt}} />
+{% endif %}
+</div>
+<div class="span-16 last">
 {{content}}
 </div>
+</div>
+

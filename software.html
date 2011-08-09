@@ -5,10 +5,17 @@ slug: software
 ---
 
 {% for project in site.categories.software %}
-<div class="project">
-  <div class="project-title">
+<div class="project span-24">
+  <div class="project-title span-24">
     <a href={{project.url}}>{{project.title}}</a>
   </div>
+<div class="span-8">
+{% if project.image %}
+<img src={{project.image}} alt={{project.image-alt}} />
+{% endif %}
+</div>
+<div class="span-16 last">
 {{project.content}}
+</div>
 </div>
 {% endfor %}
