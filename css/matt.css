@@ -59,11 +59,6 @@ li ul {
     margin-left: 2em;
 }
 
-a img {
-    border: none;
-    float: left;
-}
-
 
 #picture {
     border: none;
@@ -146,6 +141,16 @@ a img {
     margin-bottom: 1em;
 }
 
+
+#content a img {
+    padding: 3px;
+}
+#content a:hover img {
+    border: 1px dotted #93CCC6;
+    padding: 2px;
+}
+
+
 #email:before{
     content:"blackwel\40 fas.harvard.edu"
 }
@@ -206,7 +211,7 @@ a img {
 }
 
 
-.mac .project-title,h1,h2,h3,h4,h5,h6,body {
+.mac .project-title {
     font-weight: 300;
 }
 
@@ -214,6 +219,13 @@ a img {
     font-weight: 100;
 }
 
+.mac .front-header h3 {
+    font-weight: 300;
+}
+
+.mac #content p {
+    font-weight: 300;
+}
 
 .mac #navbar ul {
     font-weight: 300;
