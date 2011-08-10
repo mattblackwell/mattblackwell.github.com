@@ -215,6 +215,10 @@ li ul {
     font-weight: 300;
 }
 
+.mac .project li {
+    font-weight: 300;
+}
+
 .mac #title {
     font-weight: 100;
 }
