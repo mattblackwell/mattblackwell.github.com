@@ -1,1 +1,5 @@
+_site/_jekyll_s3.yml
+blackwell.pdf
+files/*
+.gitignore
 _site/
