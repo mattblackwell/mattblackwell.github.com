@@ -15,13 +15,13 @@ title: Amelia for SPSS Installation Instructions
     * SPSS-R Plugin 19: [Windows 32-bit][spssr19w32] | [Windows 64-bit][spssr19w64] | [Mac][spssr19mac]
 4. Download the [Amelia for SPSS extension bundle][ameliaspss].
 5. Open SPSS, go to "Utilities > Extension Bundles > Install Extension Bundle..." and direct the dialog box to the "amelia.spe" file you downloaded. 
-6. Restart SPSS and you should see an "Amelia" command under "Analyze > Multiple Imputation":
+6. Restart SPSS and you should see an "Amelia" command under "Analyze":
 
 <img src="http://www.mattblackwell.org/images/amelia-spss.png" alt="Amelia menu item" style="float: none;" />
 
 ## Using Amelia for SPSS ##
 
-To use Amelia for SPSS, simply go to "Analyze > Multiple Imputation > Amelia." You will be presented with a the following menu:
+To use Amelia for SPSS, simply go to "Analyze > Amelia." You will be presented with a the following menu:
 
 <img src="http://www.mattblackwell.org/images/menu-spss.png" alt="Amelia Dialog Menu" style="float: none;" />
 
