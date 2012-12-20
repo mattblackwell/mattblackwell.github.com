@@ -1,0 +1,44 @@
+---
+layout: default
+slug: math
+title: Math test
+---
+
+<h1>This is a test</h1>
+<br /><br />
+<h2>Introduction</h2>
+This is a test:
+<script>
+  //
+  //  Use a closure to hide the local variables from the
+  //  global namespace
+  //
+  (function () {
+    var QUEUE = MathJax.Hub.queue;  // shorthand for the queue
+    var math = null;                // the element jax for the math output.
+
+    //
+    //  Get the element jax when MathJax has produced it.
+    //
+    QUEUE.Push(function () {
+      math = MathJax.Hub.getAllJax("MathOutput")[0];
+    });
+
+    //
+    //  The onchange event handler that typesets the
+    //  math entered by the user
+    //
+    window.UpdateMath = function (TeX) {
+      QUEUE.Push(["Text",math,"\\displaystyle{"+TeX+"}"]);
+    }
+  })();
+</script>
+
+Type some TeX code:
+<input id="MathInput" size="50" onchange="UpdateMath(this.value)" />
+<p>
+
+<div id="MathOutput">
+You typed: ${}$
+</div>
+

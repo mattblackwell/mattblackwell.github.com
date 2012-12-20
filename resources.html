@@ -1,0 +1,25 @@
+---
+layout: default
+title: Resources
+slug: resources
+---
+
+{% for project in site.categories.resources %}
+<div class="project span-24">
+  <div class="project-title span-24">
+    {% if project.link %} 
+    <a href="{{project.link}}">{{project.title}} (→)</a>
+    {% else %}
+    {{project.title}}
+    {% endif %}
+  </div>
+<div class="span-8">
+{% if project.image %}
+<img src="{{project.image}}" alt="{{project.image-alt}}" />
+{% endif %}
+</div>
+<div class="span-16 last">
+{{project.content}}
+</div>
+</div>
+{% endfor %}

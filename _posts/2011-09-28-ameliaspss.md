@@ -12,7 +12,7 @@ title: Amelia for SPSS Installation Instructions
     * SPSS 19: [R 2.10 Windows][r210win] | [R 2.10 Mac][r210mac]
 3. Download and install the SPSS-R Plugin. If you are using Windows 7 or Vista, make sure to right-click on the installer exe file and use the "Run as Administrator" option. For Mac OS X, load the dmg file run the included installer. Choose your version of SPSS and operating system:
     * SPSS-R Plugin 18: [Windows 32-bit][spssr18w32] | [Windows 64-bit][spssr18w64] | [Mac][spssr18mac]
-    * SPSS-R Plugin 19: [Windows 32-bit][spssr19w32] | [Windows 64-bit][spssr19w64] | [Mac][spssr19mac]
+    * SPSS-R Plugin 19: [Windows 32-bit][spssr19w32] | [Windows 64-bit][spssr19w64] | [Mac][spssr19mac] - (Unzip these to find the installers)
 4. Download the [Amelia for SPSS extension bundle][ameliaspss].
 5. Open SPSS, go to "Utilities > Extension Bundles > Install Extension Bundle..." and direct the dialog box to the "amelia.spe" file you downloaded. 
 6. Restart SPSS and you should see an "Amelia" command under "Analyze":
@@ -42,9 +42,9 @@ Once you do this, you can simply run any analysis model you would have run witho
 [spssr18w32]: http://sourceforge.net/projects/ibmspssstat/files/Versions%20for%20Statistics%2018/PASWStatistics_RPlugIn_1802_win32.exe/download
 [spssr18w64]: http://sourceforge.net/projects/ibmspssstat/files/Versions%20for%20Statistics%2018/PASWStatistics_RPlugIn_1802_win64.exe/download
 [spssr18mac]: http://sourceforge.net/projects/ibmspssstat/files/Versions%20for%20Statistics%2018/PASWStatistics_RPlugIn_1802_mac.dmg/download
-[spssr19w32]: http://sourceforge.net/projects/ibmspssstat/files/Versions%20for%20Statistics%2019/SPSS_Statistics_REssentials_19001_win32.exe/download
-[spssr19w64]: http://sourceforge.net/projects/ibmspssstat/files/Versions%20for%20Statistics%2019/SPSS_Statistics_REssentials_19001_win64.exe/download
-[spssr19mac]: http://sourceforge.net/projects/ibmspssstat/files/Versions%20for%20Statistics%2019/SPSS_Statistics_REssentials_19001_mac.dmg/download
+[spssr19w32]:http://projects.iq.harvard.edu/cem-spss/files/spss_statistics_ressentials_19002_win32.zip
+[spssr19w64]: http://projects.iq.harvard.edu/cem-spss/files/spss_statistics_ressentials_19002_win64.zip
+[spssr19mac]: http://projects.iq.harvard.edu/cem-spss/files/spss_statistics_ressentials_19002_mac.zip
 [ameliaspss]: http://www.mattblackwell.org/files/software/amelia.spe
 [img]: http://www.mattblackwell.org/images/amelia-spss.png style="float: none;"
 [menu]: http://www.mattblackwell.org/images/menu-spss.png
