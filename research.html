@@ -7,11 +7,15 @@ title: Research
 {% for project in site.categories.research %}
 <div class="project span-24">
   <div class="project-title span-24">
-    <a href={{project.url}}>{{project.title}}</a>
+    {% if project.link %} 
+    <a href="{{project.link}}">{{project.title}} (→)</a>
+    {% else %}
+    {{project.title}}
+    {% endif %}
   </div>
 <div class="span-8">
 {% if project.image %}
-<img src={{project.image}} alt={{project.image-alt}} />
+<img src="{{project.image}}" alt="{{project.image-alt}}" />
 {% endif %}
 </div>
 <div class="span-16 last">

@@ -4,18 +4,52 @@ slug: teaching
 title: Teaching
 ---
 
+<div class ="category-name">
+<h3>University of Rochester</h3>
+</div>
 {% for project in site.categories.teaching %}
+{% if project.tags contains 'Rochester' %}
 <div class="project span-24">
   <div class="project-title span-24">
-    <a href={{project.url}}>{{project.title}}</a>
+    {% if project.link %} 
+    <a href="{{project.link}}">{{project.title}} (→)</a>
+    {% else %}
+    {{project.title}}
+    {% endif %}
   </div>
 <div class="span-8">
 {% if project.image %}
-<img src={{project.image}} alt={{project.image-alt}} />
+<img src="{{project.image}}" alt="{{project.image-alt}}" />
 {% endif %}
 </div>
 <div class="span-16 last">
 {{project.content}}
 </div>
 </div>
+{% endif %}
+{% endfor %}
+
+<div class ="category-name">
+<h3>Harvard University</h3>
+</div>
+{% for project in site.categories.teaching %}
+{% if project.tags contains 'Harvard' %}
+<div class="project span-24">
+  <div class="project-title span-24">
+    {% if project.link %} 
+    <a href="{{project.link}}">{{project.title}} (→)</a>
+    {% else %}
+    {{project.title}}
+    {% endif %}
+  </div>
+<div class="span-8">
+{% if project.image %}
+<img src="{{project.image}}" alt="{{project.image-alt}}" />
+{% endif %}
+</div>
+<div class="span-16 last">
+{{project.content}}
+</div>
+</div>
+{% endif %}
 {% endfor %}
