@@ -36,14 +36,18 @@
 <div class="container">
   <div class="span-24">
     <div id="title">
-      <a href="/index.html" id="picture">Matt Blackwell</a>
+      <a href="/" id="picture">Matt Blackwell</a>
     </div>
 
 
     <div id="navbar">
       <ul>
         <li{% if page.slug == "home" %} id="active"{% endif %}>
-          <a href="/index.html"{% if page.slug == "home" %} id="current"{% endif%}>About</a></li><li{% if page.slug == "research" %} id="active"{% endif %}><a href="/research.html"{% if page.slug == "research" %} id="current"{% endif%}>Research</a></li><li{% if page.slug == "teaching" %} id="active"{% endif %}><a href="/teaching.html"{% if page.slug == "teaching" %} id="current"{% endif%}>Teaching</a></li><li{% if page.slug == "software" %} id="active"{% endif %}><a href="/software.html"{% if page.slug == "software" %} id="current"{% endif%}>Software</a></li><li{% if page.slug == "resources" %} id="active"{% endif %}><a href="/resources.html"{% if page.slug == "resources" %} id="current"{% endif%}>Resources</a></li></ul></div>
+          <a href="/"{% if page.slug == "home" %} id="current"{% endif%}>About</a></li><li{% if page.slug == "research" %} id="active"{% endif %}><a href="/research/"{% if page.slug == "research" %} id="current"{% endif%}>Research</a></li><li{% if page.slug == "teaching" %} id="active"{% endif %}><a href="/teaching/"{% if page.slug == "teaching" %} id="current"{% endif%}>Teaching</a></li><li{% if page.slug == "software" %} id="active"{% endif %}><a href="/software/"{% if page.slug == "software" %} id="current"{% endif%}>Software</a></li>
+        
+        <li{% if page.slug == "resources" %} id="active"{% endif %}><a href="/resources/"{% if page.slug == "resources" %} id="current"{% endif%}>Resources</a></li>
+        <li{% if page.slug == "blog" %} id="active"{% endif %}><a href="/blog/"{% if page.slug == "blog" %} id="current"{% endif%}>Blog</a></li>
+    </ul></div>
   </div>
   
 <div id="content" class="span-24">
