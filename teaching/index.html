@@ -14,7 +14,7 @@ title: Teaching
     {% if project.link %} 
     <a href="{{project.link}}">{{project.title}} (→)</a>
     {% else %}
-    {{project.title}}
+    <a href="{{project.url}}">{{project.title}} (→)</a>
     {% endif %}
   </div>
 <div class="span-8">
@@ -23,7 +23,7 @@ title: Teaching
 {% endif %}
 </div>
 <div class="span-16 last">
-{{project.content}}
+{{project.content | postmorefilter: project.url, "Class Page"}}
 </div>
 </div>
 {% endif %}
