@@ -8,7 +8,7 @@ link: "/files/papers/sens.pdf"
 image: "/images/sens.png"
 image-alt: 'The waving flag of sensitivity analysis'
 ---
-*(Working Paper)*
+*(Forthcoming, Political Analysis)*
 
 The estimation of causal effects has a revered place in all fields of
 empirical political science, but a large volume methodological and
