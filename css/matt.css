@@ -2,9 +2,10 @@ body {
     font-family:  "Lato","Bitstream Vera Sans", helvetica, arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    background-color: #1A1F1E;
+    background-color:  #353535;/* #1A1F1E; */
     color: #fff;
     line-height: 1.5;
+    border-top: 5px solid #93CCC6;
 }
 
 a:link { 
@@ -183,10 +184,9 @@ li ul {
 }
 
 blockquote {
-    border-left: 1px dotted #E3DFBA;
+    border-left: 3px solid #E3DFBA;
     color: #fff;
     padding: 10px;
-    background-color: #282828;
 }
 
 blockquote p {
