@@ -173,8 +173,9 @@ li ul {
 #footer {
     margin: auto;
     margin-top: 2.5em;
-    margin-bottom: 1em;
-    padding: 2px;
+    margin-bottom: 2.5em;
+    padding-top: 2px;
+    padding-bottom: 20px;
     /* width: 780px; */
     border-top: 1pt dotted white;
     font-size: .75em;
