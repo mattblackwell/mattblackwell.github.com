@@ -182,6 +182,18 @@ li ul {
     clear: left;
 }
 
+blockquote {
+    border-left: 1px dotted #E3DFBA;
+    color: #fff;
+    padding: 10px;
+    background-color: #282828;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+
 .vcard {
     text-align: left;
     clear: none;
