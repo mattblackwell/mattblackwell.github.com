@@ -89,8 +89,8 @@ li ul {
 #navbar 
 {
     border-bottom: 1px solid #93CCC6;
-    text-align: center;
-    clear:both;
+    /* text-align: center; */
+    /* clear:both; */
 }
 
 #navbar ul
@@ -123,7 +123,7 @@ li ul {
 #navbar li a {
     text-decoration: none;
     color: #93CCC6;
-    padding: 0.2em 1em 0em 1em;
+    padding: 0.2em 0.75em 0em 0.75em;
     margin: 0;
     border: none;
 }
@@ -139,8 +139,8 @@ li ul {
 }
 
 #content {
-    margin: auto;
-    padding: 20px;
+    /* margin: auto; */
+    padding-top: 20px;
     /* width: 780px; */
 }
 
@@ -149,6 +149,7 @@ li ul {
     border: 0;
     margin-right: 3em;
     margin-bottom: 1em;
+    max-width: 100%;
 }
 
 
@@ -195,7 +196,7 @@ li ul {
     /* border-top: 1px solid #E3DFBA; */
     color: #E3DFBA;
     padding: 0px;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-family: "Lato", "Calibri", Verdana, sans-serif;
     font-weight: 300;
     width: 100%;
@@ -251,5 +252,74 @@ li ul {
 
 .mac #navbar ul {
     font-weight: 300;
+}
+
+
+
+@media (max-width: 780px) {
+    .container {
+        width: 100%;
+    }
+    .span-16 {
+        /* width: 500px; */
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    .append-4 {
+        padding-right: 0px;
+    }
+    /* .span-8 { */
+    /*     width: 245px; */
+    /* } */
+    /* #navbar li { */
+    /*     display: inline-table; */
+        
+    /* }     */
+    /* #navbar li a { */
+    /*     display: inline-block; */
+    /*     width: 100px; */
+    /* } */
+    /* #navbar li {  */
+    /*     padding: 0; */
+    /* } */
+
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 300px;
+    }
+    .span-24 {
+        width: 300px;
+    }
+    .span-8 {
+        width: 300px;
+    }
+    .span-16 {
+        width: 300px;
+        padding-right: 0px;
+        padding-left: 0px;
+        
+    }
+    .span-12 {
+        width: 300px;
+    }
+    #title {
+        font-size: 2.5em; 
+    }
+    #navbar ul {
+        font-size: 1.25em;   
+        width: 300px;
+    }
+    #navbar li {
+        display: inline-table;
+        
+    }    
+    #navbar li a {
+        display: inline-block;
+        width: 90px;
+    }
+
 }
 
