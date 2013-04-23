@@ -1,0 +1,15 @@
+---
+layout: post
+title: Pages vs. Screens
+category: blog
+---
+
+PDFs are the workhorse of academic life. If there isn't a PDF open on my computer, it probably means I am not working. But as *screens* are becoming increasingly important, the PDF remains almost nostalgically loyal to the printed page. This tension is harming researchers' ability to get their work read inside and outside the academic community. If I'm being honest, I basically want to actually be able to *read* academic writing on my phone and right now that experience is horrible, bordering on impossible. 
+
+The PDF was useful when we needed some way of transferring a paper electronically without any loss of content or formatting. It mimics the process of physically mailing a paper from one researcher to another. It provides a massive improvement over Microsoft Word, where content and formatting could easily be lost in the transfer process. It also has an inherent reading model in mind---the PDF represents the physically printed document and lends itself to printing a hard copy. The PDF begs to be printed---it is already on pages that match your printer paper, it already has a white background like your printer paper, and so on. 
+
+But these advantages---fidelity to the physical document, a fixed format---are becoming liabilities. We live in an era of massive diversity in screen size and resolution. I am just as likely to stumble on a new paper on my phone as I am on my laptop as I am on my rather large monitor. The fixed format of the PDF cannot cope with this diversity because it remains loyal to the printed page rather than the reader. And obviously this is beneficial when reviewing proofs for publication, but when trying to increase readership, should we rely on a format that is so rigid and unhelpful to readers?
+
+HTML is a another standard that most everyone that has access to the internet uses every day. It takes a different approach than PDFs. Ignore the printed page and focus on screens, where the reading is meant to take place. There is a strange divide emerging among academics, especially those who blog. They post their "non-academic" thoughts (largely on academic topics) in HTML on a blog or on their own website. At the same time, they keep their "professional" or "academic" writing in PDFs on their academic website. There is an implicit admission that HTML are better than PDFs for discovery and reading, but this hasn't trickled back to their academic work. I am as guilty of this as the next person. 
+
+All of this stems somewhat from a lack of tools. LaTeX provides the ability to create high-quality PDFs, rich with mathematical text, high-quality typesetting, and bibliographic support. There are methods, such as [Pandoc](http://johnmacfarlane.net/pandoc/), that can convert LaTeX to HTML (and services like [MathJax](http://www.mathjax.org/) can handle the mathematical type), but these methods are not yet standard and don't always work as planned. Maybe this will change quite rapidly, but I'm not optimistic. Academic are known for many things, but rapid changes are not among them. 

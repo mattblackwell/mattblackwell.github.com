@@ -5,21 +5,21 @@ title: Research
 ---
 
 {% for project in site.categories.research %}
-<div class="project span-24">
-  <div class="project-title span-24">
+<div class="project">
+  <div class="project-title">
     {% if project.link %} 
     <a href="{{project.link}}">{{project.title}} (→)</a>
     {% else %}
     {{project.title}}
     {% endif %}
   </div>
-<div class="span-8">
 {% if project.image %}
+<div class="span-8">
 <img src="{{project.image}}" alt="{{project.image-alt}}" />
+</div>
 {% endif %}
-</div>
-<div class="span-16 last">
+<!-- <div class="span-16 last"> -->
 {{project.content}}
-</div>
+<!-- </div> -->
 </div>
 {% endfor %}

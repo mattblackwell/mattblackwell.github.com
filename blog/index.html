@@ -1,0 +1,23 @@
+---
+layout: default
+slug: blog
+title: Blog
+---
+
+{% for post in site.categories.blog %}
+<div class="project">
+  <div class="project-title">
+    {% if post.link %} 
+    <a href="{{post.link}}">{{post.title}} (→)</a>
+    {% else %}
+    <a href="{{post.url}}">{{post.title}}</a>
+    {% endif %}
+  </div>
+<!-- <div class="span-16 last"> -->
+{{post.date | date_to_string}}
+<br /> <br />
+{{post.content}}
+<!-- </div> -->
+</div>
+<hr />
+{% endfor %}

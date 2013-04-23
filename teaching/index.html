@@ -9,22 +9,22 @@ title: Teaching
 </div>
 {% for project in site.categories.teaching %}
 {% if project.tags contains 'Rochester' %}
-<div class="project span-24">
-  <div class="project-title span-24">
+<div class="project">
+  <div class="project-title">
     {% if project.link %} 
     <a href="{{project.link}}">{{project.title}} (→)</a>
     {% else %}
-    {{project.title}}
+    <a href="{{project.url}}">{{project.title}} (→)</a>
     {% endif %}
   </div>
-<div class="span-8">
 {% if project.image %}
+<div class="span-8">
 <img src="{{project.image}}" alt="{{project.image-alt}}" />
+</div>
 {% endif %}
-</div>
-<div class="span-16 last">
+<!-- <div class="span-16 last"> -->
 {{project.content | postmorefilter: project.url, "Class Page"}}
-</div>
+<!-- </div> -->
 </div>
 {% endif %}
 {% endfor %}
@@ -34,22 +34,22 @@ title: Teaching
 </div>
 {% for project in site.categories.teaching %}
 {% if project.tags contains 'Harvard' %}
-<div class="project span-24">
-  <div class="project-title span-24">
+<div class="project">
+  <div class="project-title">
     {% if project.link %} 
     <a href="{{project.link}}">{{project.title}} (→)</a>
     {% else %}
     {{project.title}}
     {% endif %}
   </div>
-<div class="span-8">
 {% if project.image %}
+<div class="span-8">
 <img src="{{project.image}}" alt="{{project.image-alt}}" />
+</div>
 {% endif %}
-</div>
-<div class="span-16 last">
+<!-- <div class="span-16 last"> -->
 {{project.content}}
-</div>
+<!-- </div> -->
 </div>
 {% endif %}
 {% endfor %}
