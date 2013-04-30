@@ -13,4 +13,12 @@ layout: default
 {% endif %}
 {{content}}
 </div>
+<div class="post-nav"> 
+{% if page.blog_previous %}
+<a rel="prev" class="previous" href={{page.blog_previous.url}}>&larr; {{page.blog_previous.title}}</a>
+{% endif %}
+{% if page.blog_next %}
+<a rel="next" class="next" href={{page.blog_next.url}}>{{page.blog_next.title}} &rarr;</a>
+{% endif %}
+</div>
 

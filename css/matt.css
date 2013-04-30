@@ -264,6 +264,32 @@ blockquote p {
     font-weight: 300;
 }
 
+.recents {
+    border-top: 1px dotted #E3DFBA;
+    margin-top: 10em;
+    padding-top: 1em;
+    font-size: .9em;
+}
+
+ul#tweets {
+    border-top: 1px dotted #E3DFBA;
+    list-style-type: none;
+}
+
+ul#tweets li {
+    border-bottom: 1px dotted #E3DFBA;
+}
+
+ul#tweets a[href*='matt_blackwell/status'] {
+    float: right;
+    padding:0 0 .1em 1em;
+    position:relative;
+    border-bottom: none;
+}
+
+.post-nav a.next { 
+    float: right;
+}
 
 
 @media (max-width: 780px) {
