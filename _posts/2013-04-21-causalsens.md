@@ -17,6 +17,6 @@ causalsens is an [R][] package to implement the selection bias approach to sensi
 
 [R]: http://www.r-project.org
 [github]: https://github.com/mattblackwell/causalsens
-[senspaper]: http://www.mattblackwell.org/files/papers/sens.pdf
+[senspaper]: http://pan.oxfordjournals.org/cgi/reprint/mpt006?ijkey=IstLH0KYWM4sVCe&keytype=ref
 [CRAN]: http://cran.r-project.org/web/packages/causalsens/
 [vignette]: http://cran.r-project.org/web/packages/causalsens/vignettes/causalsens.pdf
