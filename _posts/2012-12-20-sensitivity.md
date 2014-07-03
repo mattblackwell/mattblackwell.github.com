@@ -4,7 +4,7 @@ slug: sensitivity
 title: 'A Selection Bias Approach to Sensitivity Analysis for Causal Effects'
 tags: methods
 category: research
-link: "http://pan.oxfordjournals.org/cgi/reprint/mpt006?ijkey=IstLH0KYWM4sVCe&keytype=ref"
+link: "http://pan.oxfordjournals.org/cgi/reprint/mpt006?ijkey=IstLH0KYWM4sVCe&amp;keytype=ref"
 image: "/images/sens.png"
 image-alt: 'The waving flag of sensitivity analysis'
 ---
