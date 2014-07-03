@@ -8,7 +8,7 @@ link: "http://pan.oxfordjournals.org/cgi/reprint/mpt006?ijkey=IstLH0KYWM4sVCe&ke
 image: "/images/sens.png"
 image-alt: 'The waving flag of sensitivity analysis'
 ---
-*(Forthcoming, Political Analysis)*
+*Political Analysis*, Vol. 22, No. 2 (2014): 169-192.
 
 The estimation of causal effects has a revered place in all fields of
 empirical political science, but a large volume methodological and
@@ -25,6 +25,9 @@ approach to assessing the plausibility of causal effects. To
 demonstrate the approach, I present applications to three causal
 inference estimation strategies: regression, matching, and weighting.
   
-  
+* [Replication Archive][dvn]
+* [causalsens][package] R package to implement methods
  
 [sens]:  http://www.mattblackwell.org/files/papers/sens.pdf
+[dvn]: http://hdl.handle.net/1902.1/21131
+[package]: /software/causalsens/
