@@ -5,6 +5,32 @@ title: Teaching
 ---
 
 <div class ="category-name">
+<h3>Harvard University</h3>
+</div>
+{% for project in site.categories.teaching %}
+{% if project.tags contains 'Harvard' %}
+<div class="project">
+  <div class="project-title">
+    {% if project.link %} 
+    <a href="{{project.link}}">{{project.title}} (→)</a>
+    {% else %}
+    {{project.title}}
+    {% endif %}
+  </div>
+{% if project.image %}
+<div class="span-8">
+<img src="{{project.image}}" alt="{{project.image-alt}}" />
+</div>
+{% endif %}
+<!-- <div class="span-16 last"> -->
+{{project.content}}
+<!-- </div> -->
+</div>
+{% endif %}
+{% endfor %}
+
+
+<div class ="category-name">
 <h3>University of Rochester</h3>
 </div>
 {% for project in site.categories.teaching %}
@@ -29,27 +55,3 @@ title: Teaching
 {% endif %}
 {% endfor %}
 
-<div class ="category-name">
-<h3>Harvard University</h3>
-</div>
-{% for project in site.categories.teaching %}
-{% if project.tags contains 'Harvard' %}
-<div class="project">
-  <div class="project-title">
-    {% if project.link %} 
-    <a href="{{project.link}}">{{project.title}} (→)</a>
-    {% else %}
-    {{project.title}}
-    {% endif %}
-  </div>
-{% if project.image %}
-<div class="span-8">
-<img src="{{project.image}}" alt="{{project.image-alt}}" />
-</div>
-{% endif %}
-<!-- <div class="span-16 last"> -->
-{{project.content}}
-<!-- </div> -->
-</div>
-{% endif %}
-{% endfor %}
