@@ -2,15 +2,25 @@
 layout: default
 ---
 
-<div class="project">
-  <div class="project-title">
-    {{page.title}} 
-  </div>
-{% if page.image %}
-<div class="span-8">
+<h3>{{page.title}}</h3>
+<div class="is-row">
+  
+  <div class="is-col is-30 title-col">
+    {% if page.image %}
 <img src="{{page.image}}" alt="{{page.image-alt}}" />
-</div>
 {% endif %}
-{{content}}
+<div class="is-text-right">
+  <ul class="is-unstyled">
+     {% if page.link %} <li><a href="{{page.link}}" class="boxlink">pdf</a></li> {% endif %}       {% if page.replication %}
+        <li><a href="{{paper.replication}}" class="boxlink">data</a></li>
+        {% endif %}
+        {% if page.pubversion %}
+        <li><a href="{{paper.pubversion}}" class="boxlink">publisher version</a></li>
+        {% endif %}
+        </ul>
 </div>
-
+  </div>
+  <div class="is-col is-70">
+    {{content}}
+  </div>
+</div>

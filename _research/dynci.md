@@ -2,13 +2,20 @@
 layout: project
 slug: dynci
 title: 'A Framework for Dynamic Causal Inference in Political Science'
-tags: methods
+tags: ['Methods', 'Published']
 category: research
 link: '/files/papers/dynci.pdf'
 image: '/images/dynci.png'
+date: 2013-04-01
+journal: 'American Journal of Political Science'
+pages: '504-519'
+volume: 57
+number: 2
 image-alt: 'Dynamic Causal Inference'
+author: "Matthew Blackwell"
+replication: http://hdl.handle.net/1902.1/19801
+pubversion: https://doi.org/10.1111/j.1540-5907.2012.00626.x
 ---
-*American Journal of Political Science*, Vol. 57, No. 2 (2013): 504-519.
 
 Dynamic strategies are an essential part of politics. In the context
   of campaigns, for example, candidates continuously recalibrate their

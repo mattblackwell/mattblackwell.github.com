@@ -5,53 +5,25 @@ title: Teaching
 ---
 
 <div class ="category-name">
-<h3>Harvard University</h3>
+<h3>Courses</h3>
 </div>
-{% for project in site.categories.teaching %}
-{% if project.tags contains 'Harvard' %}
-<div class="project">
-  <div class="project-title">
-    {% if project.link %} 
-    <a href="{{project.link}}">{{project.title}} (→)</a>
-    {% else %}
-    {{project.title}}
-    {% endif %}
-  </div>
-{% if project.image %}
-<div class="span-8">
-<img src="{{project.image}}" alt="{{project.image-alt}}" />
+{% assign wpByYear = site.teaching | sort: "date" | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% for year in wpByYear reversed %}
+<div class="is-row">
+<div class="is-col is-10 paperlist">
+  {{year.name}}
 </div>
-{% endif %}
-<!-- <div class="span-16 last"> -->
-{{project.content}}
-<!-- </div> -->
+<div class="is-col is-90 paperlist">
+  <ul>
+    {% for paper in year.items %}
+    <li> <b>{{paper.title}}</b> {% if paper.link %} 
+      <a href="{{paper.link}}" class="boxlink">syllabus</a>
+        {% endif %}
+      <a href="{{paper.url}}" class="boxlink">course materials</a>
+    </li>
+    <li>{{paper.excerpt}}</li>
+      {% endfor %}
+    </ul>
 </div>
-{% endif %}
+</div>
 {% endfor %}
-
-
-<div class ="category-name">
-<h3>University of Rochester</h3>
-</div>
-{% for project in site.categories.teaching %}
-{% if project.tags contains 'Rochester' %}
-<div class="project">
-  <div class="project-title">
-    {% if project.link %} 
-    <a href="{{project.link}}">{{project.title}} (→)</a>
-    {% else %}
-    <a href="{{project.url}}">{{project.title}} (→)</a>
-    {% endif %}
-  </div>
-{% if project.image %}
-<div class="span-8">
-<img src="{{project.image}}" alt="{{project.image-alt}}" />
-</div>
-{% endif %}
-<!-- <div class="span-16 last"> -->
-{{project.content | postmorefilter: project.url, "Class Page"}}
-<!-- </div> -->
-</div>
-{% endif %}
-{% endfor %}
-

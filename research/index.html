@@ -4,22 +4,87 @@ slug: research
 title: Research
 ---
 
-{% for project in site.categories.research %}
-<div class="project">
-  <div class="project-title">
-    {% if project.link %} 
-    <a href="{{project.link}}">{{project.title}} (→)</a>
-    {% else %}
-    {{project.title}}
-    {% endif %}
-  </div>
-{% if project.image %}
-<div class="span-8">
-<img src="{{project.image}}" alt="{{project.image-alt}}" />
+
+<h3><a href="/blackwell-cv.pdf">Curriculum Vitae</a></h3>
+
+
+<div class ="category-name">
+<h3>Working Papers</h3>
 </div>
-{% endif %}
-<!-- <div class="span-16 last"> -->
-{{project.content}}
-<!-- </div> -->
+{% assign wpByYear = site.research | where: "tags", "Working Paper" | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% for year in wpByYear reversed%}
+<div class="is-row">
+<div class="is-col is-10 paperlist">
+  {{year.name}}
+</div>
+<div class="is-col is-90 paperlist">
+  <ul>
+    {% for paper in year.items %}
+    <li> {{paper.author}}. "{{paper.title}}." {% if paper.link %} 
+      <a href="{{paper.link}}" class="boxlink">pdf</a>
+        {% endif %}
+        <a href="{{paper.url}}" class="boxlink">abstract+more</a>
+      </li>
+      {% endfor %}
+    </ul>
+</div>
 </div>
 {% endfor %}
+
+<div class ="category-name">
+<h3>Book</h3>
+</div>
+{% assign bookByYear = site.research | where: "tags", "Book" | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% for year in bookByYear reversed%}
+<div class="is-row">
+  <div class="is-col is-10 paperlist">
+    {{year.name}}
+  </div>
+  <div class="is-col is-90 paperlist">
+    <ul>
+      {% for paper in year.items %}
+      <li> {% if paper.url %} 
+    {{paper.author}}. <a href="{{paper.url}}">{{paper.title}}</a>. {% if paper.publisher %} {{paper.publisher}} {% endif %}
+    {% else %}
+    {{paper.title}} 
+    {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endfor %}
+
+
+
+
+
+<div class ="category-name">
+<h3>Publications</h3>
+</div>
+<div class="is-row">
+{% assign pubsByYear = site.research | where: "tags", "Published" | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% for year in pubsByYear reversed %}
+<div class="is-col is-10">
+    {{year.name}}
+</div>
+<div class="is-col is-90 paperlist">
+    <ul>
+      {% for paper in year.items %}
+      {% if paper.tags contains 'Published' %}
+      <li>  
+    {{paper.author}}. "{{paper.title}}." <b>{{paper.journal}}</b>{% if paper.volume %}, Vol. {{paper.volume}}{% endif %}{% if paper.number %}, No. {{paper.number}}{% endif %} ({{year.name}}){% if paper.pages %}: {{paper.pages}} {% endif %}
+    {% if paper.link %} <a href="{{paper.link}}" class="boxlink">pdf</a> {% endif %}         {% if paper.replication %}
+        <a href="{{paper.replication}}" class="boxlink">data</a>
+        {% endif %}
+        {% if paper.pubversion %}
+        <a href="{{paper.pubversion}}" class="boxlink">publisher version</a>
+        {% endif %}
+ <a href="{{paper.url}}" class="boxlink">abstract+more</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+</div>

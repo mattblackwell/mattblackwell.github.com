@@ -4,8 +4,8 @@ slug: causalsens
 title: 'causalsens: A Selection Bias Approach to Sensitivity Analysis for Causal Effects'
 tags: methods, causal-inference
 category: software
-permalink: /software/causalsens
-link: /software/causalsens
+permalink: /software/causalsens/
+link: /software/causalsens/
 image: '/images/highwire.jpg'
 image-alt: 'Are your results teetering?'
 ---

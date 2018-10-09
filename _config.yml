@@ -1,3 +1,11 @@
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
 markdown: kramdown
+excerpt_separator: <!--more-->
+collections:
+  teaching:
+    output: true
+  research:
+    output: true
+  software:
+    output: true

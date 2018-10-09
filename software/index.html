@@ -4,22 +4,26 @@ title: Software
 slug: software
 ---
 
-{% for project in site.categories.software %}
-<div class="project">
-  <div class="project-title">
-    {% if project.link %} 
-    <a href="{{project.link}}">{{project.title}} (→)</a>
-    {% else %}
-    {{project.title}}
-    {% endif %}
-  </div>
-{% if project.image %}
-<div class="span-8">
-<img src="{{project.image}}" alt="{{project.image-alt}}" />
+<div class ="category-name">
+<h3>Software Projects</h3>
 </div>
+{% for project in site.categories.software %}
+  <div class="project-title">
+  </div>
+  <div class="is-row">
+  <div class="is-col is-30">
+{% if project.image %}
+<img src="{{project.image}}" alt="{{project.image-alt}}" />
 {% endif %}
-<!-- <div class="span-16 last"> -->
-{{project.content}}
-<!-- </div> -->
+
+
+</div>
+  <div class="is-col is-70">
+    <b>{{project.title}}</b>     {% if project.link %} 
+    <a href="{{project.link}}" class="boxlink">project page</a>
+    {% endif %}
+    
+    {{project.content}}
+  </div>
 </div>
 {% endfor %}

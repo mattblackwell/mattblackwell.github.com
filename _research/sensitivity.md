@@ -2,13 +2,20 @@
 layout: project
 slug: sensitivity
 title: 'A Selection Bias Approach to Sensitivity Analysis for Causal Effects'
-tags: methods
+tags: ['Methods', 'Published']
 category: research
-link: "http://pan.oxfordjournals.org/cgi/reprint/mpt006?ijkey=IstLH0KYWM4sVCe&amp;keytype=ref"
+link: "/files/papers/causalsens.pdf"
 image: "/images/sens.png"
+date: 2014-04-01
+journal: 'Political Analysis'
+volume: 22
+number: 2
+pages: '169-192'
+author: "Matthew Blackwell"
 image-alt: 'The waving flag of sensitivity analysis'
+pubversion: https://doi.org/10.1093/pan/mpt006
+replication: http://hdl.handle.net/1902.1/21131
 ---
-*Political Analysis*, Vol. 22, No. 2 (2014): 169-192.
 
 The estimation of causal effects has a revered place in all fields of
 empirical political science, but a large volume methodological and
@@ -25,7 +32,6 @@ approach to assessing the plausibility of causal effects. To
 demonstrate the approach, I present applications to three causal
 inference estimation strategies: regression, matching, and weighting.
   
-* [Replication Archive][dvn]
 * [causalsens][package] R package to implement methods
  
 [sens]:  http://www.mattblackwell.org/files/papers/sens.pdf

@@ -4,18 +4,21 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Matthew Blackwell - {{page.title}}</title>
 <script src="/css_browser_selector.js" type="text/javascript"></script>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Raleway:100,300' rel='stylesheet' type='text/css' />
-  <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print" />
-    <link rel="stylesheet" href="/css/syntax-default.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+      <!-- Kube CSS -->
+  <link rel="stylesheet" href="/css/kube.min.css" type="text/css"/>
+  <!-- <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection" /> -->
+  <!-- <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print" /> -->
+    <!-- <link rel="stylesheet" href="/css/syntax-default.css" type="text/css" /> -->
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
   <![endif]-->
-  <link rel="stylesheet" href="/css/matt.css" type="text/css"/> 
+  <link rel="stylesheet" href="/css/matt.css" type="text/css"/>
   <link rel="icon" type="image/png" href="/images/favicon.png"/>
 <script type="text/javascript">
 
@@ -33,27 +36,32 @@
  
 </head>
 
-<body>
-<div class="container">
-  <div class="span-16 last prepend-4 append-4">
-    <div id="title">
-      <a href="/" id="picture">Matt Blackwell</a>
-    </div>
-      <div id="navbar">
+  <body>
+  <div class="is-navbar-container is-inset-x-4 is-inset-bottom-8">
+    <div id="my-navbar" class="is-navbar">
+      <nav>
         <ul>
-          <li{% if page.slug == "home" %} id="active"{% endif %}>
-            <a href="/"{% if page.slug == "home" %} id="current"{% endif%}>About</a></li><li{% if page.slug == "research" %} id="active"{% endif %}><a href="/research/"{% if page.slug == "research" %} id="current"{% endif%}>Research</a></li><li{% if page.slug == "teaching" %} id="active"{% endif %}><a href="/teaching/"{% if page.slug == "teaching" %} id="current"{% endif%}>Teaching</a></li><li{% if page.slug == "software" %} id="active"{% endif %}><a href="/software/"{% if page.slug == "software" %} id="current"{% endif%}>Software</a></li><li{% if page.slug == "resources" %} id="active"{% endif %}><a href="/resources/"{% if page.slug == "resources" %} id="current"{% endif%}>Resources</a></li><li{% if <p></p>age.slug == "blog" %} id="active"{% endif %}><a href="/blog/"{% if page.slug == "blog" %} id="current"{% endif%}>Blog</a></li>
-      </ul>
+          <li><b><a href="/">Matt Blackwell</a></b></li>
+        </ul>
+      </nav>
+      <nav class="is-push-right">
+        <ul>
+          <li><a href="/research/">Research</a></li>
+          <li><a href="/deep-roots/">Book</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/software/">Software</a></li>
+          <li><a href="/resources/">Resources</a></li>
+          <li><a href="/blog/">Blog</a></li>
+    </ul>
+    </nav>
       </div>
   </div>
-  
-<div class="span-16 last prepend-4 append-4">
-  <div id="content">
+  <div class="is-width-medium is-center is-inset-16">
     {{content}}
   </div>
-</div>
 
-<div class="span-16 last prepend-4 append-4">
+
+<div class="is-inset-16">
 <div id="footer">
   <div id="sites">  
 <div>
@@ -95,6 +103,11 @@ C.V. (<a href="http://www.mattblackwell.org/blackwell-cv.pdf" onclick="pageTrack
 </div>
 </div> <!-- closing "container"--> 
 
-<script type="text/javascript" src="/scripts/retina.js"></script>
+  <script type="text/javascript" src="/scripts/retina.js"></script>
+  <!-- Kube JS (optional if you are using Kube CSS only) -->
+  <script src="/scripts/kube.min.js"></script> 
+  <script>
+    $K.init();
+  </script>
 </body>
 </html>
