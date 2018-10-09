@@ -4,7 +4,7 @@ slug: slavery
 title: 'The Political Legacy of American Slavery'
 tags: ['American Politics', 'Published'] 
 category: research
-link: "/files/papers/slavery.pdf"
+pdf: "/files/papers/slavery.pdf"
 image: "/images/slavery.png"
 journal: 'Journal of Politics'
 date: 2016-02-15

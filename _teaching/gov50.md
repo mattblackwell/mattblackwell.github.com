@@ -4,11 +4,12 @@ slug: gov50
 title: Intro to Political Science Research Methods
 tags: ['Methods', 'Harvard']
 category: teaching
-link: '/files/teaching/gov50-syllabus2018.pdf'
+syllabus: '/files/teaching/gov50-syllabus2018.pdf'
 permalink: /teaching/gov50/
 image: '/images/quincunx.png'
 image-alt: 'The Galton Box'
 date: 2018-09-01
+coursename: "Government 50"
 ---
 
 An undergraduate-level course that introduces students to modern quantitative social science with a focus on computing with R. This is a required course for students in our department. We cover quantitative approaches to causal inference, measurement, prediction, and inference, focusing on recent social science empirical examples. 

@@ -4,7 +4,7 @@ slug: dynci
 title: 'A Framework for Dynamic Causal Inference in Political Science'
 tags: ['Methods', 'Published']
 category: research
-link: '/files/papers/dynci.pdf'
+pdf: '/files/papers/dynci.pdf'
 image: '/images/dynci.png'
 date: 2013-04-01
 journal: 'American Journal of Political Science'

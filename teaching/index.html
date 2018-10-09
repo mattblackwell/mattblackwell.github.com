@@ -16,8 +16,8 @@ title: Teaching
 <div class="is-col is-90 paperlist">
   <ul>
     {% for paper in year.items %}
-    <li> <b>{{paper.title}}</b> {% if paper.link %} 
-      <a href="{{paper.link}}" class="boxlink">syllabus</a>
+    <li> <b>{{paper.title}}</b> {% if paper.syllabus %} 
+      <a href="{{paper.syllabus}}" class="boxlink">syllabus</a>
         {% endif %}
       <a href="{{paper.url}}" class="boxlink">course materials</a>
     </li>

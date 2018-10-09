@@ -5,10 +5,13 @@ title: 'Analyzing Causal Mechanisms in Survey Experiments'
 tags: ['Methods', 'Published'] 
 category: research
 journal: "Political Analysis"
-link: "/files/papers/survey-mechanisms.pdf"
+pdf: "/files/papers/survey-mechanisms.pdf"
 image: "/images/door-to-door.jpg"
 image-alt: 'Surveying'
-date: 2018-01-20
+date: 2018-10-01
+volume: 26
+issue: 4
+pages: 357-378
 author: "Avidit Acharya, Matthew Blackwell, and Maya Sen"
 replication: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KHE44F
 pubversion: https://www.cambridge.org/core/journals/political-analysis/article/analyzing-causal-mechanisms-in-survey-experiments/05B982CEB2A9E3A10BF0C36F5D12711A

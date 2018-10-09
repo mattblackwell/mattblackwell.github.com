@@ -4,7 +4,7 @@ slug: slavery
 title: 'A Culture of Disenfranchisement: How American Slavery Continues to Affect Voting Behavior'
 tags: ['American Politics', 'Working Paper'] 
 category: research
-link: "/files/papers/slavery-voting.pdf"
+pdf: "/files/papers/slavery-voting.pdf"
 image: "/images/civil-rights-protesters.jpg"
 image-alt: 'A Civil Rights March'
 author: "Avidit Acharya, Matthew Blackwell, and Maya Sen"

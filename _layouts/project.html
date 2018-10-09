@@ -2,23 +2,33 @@
 layout: default
 ---
 
-<h3>{{page.title}}</h3>
+
 <div class="is-row">
   
   <div class="is-col is-30 title-col">
-    {% if page.image %}
-<img src="{{page.image}}" alt="{{page.image-alt}}" />
-{% endif %}
-<div class="is-text-right">
+<div class="is-text-right is-text-left-mobile">
+  <h4>{{page.title}}</h4>
+  <b>{{page.journal}}</b>{% if page.volume %}, Vol. {{page.volume}}{% endif %}{% if page.number %}, No. {{page.number}}{% endif %} {% if page.coursename %} {{page.coursename}} {% endif %} ({{page.date | date: "%Y"}}){% if page.pages %}: {{page.pages}}  {% endif %}
+
   <ul class="is-unstyled">
-     {% if page.link %} <li><a href="{{page.link}}" class="boxlink">pdf</a></li> {% endif %}       {% if page.replication %}
-        <li><a href="{{paper.replication}}" class="boxlink">data</a></li>
+    {% if page.pdf %} <li><a href="{{page.pdf}}" class="boxlink">pdf</a></li> {% endif %}   
+    {% if page.syllabus %} <li><a href="{{page.syllabus}}" class="boxlink">syllabus</a></li> {% endif %}
+    {% if page.replication %}
+        <li><a href="{{page.replication}}" class="boxlink">data</a></li>
         {% endif %}
         {% if page.pubversion %}
-        <li><a href="{{paper.pubversion}}" class="boxlink">publisher version</a></li>
+        <li><a href="{{page.pubversion}}" class="boxlink">publisher version</a></li>
         {% endif %}
+        {% if page.amazon %} <li><a href="{{page.amazon}}" class="boxlink">buy it on amazon</a></li> {% endif %}
+
         </ul>
 </div>
+{% if page.image %}
+<div class="is-center">
+  <img src="{{page.image}}" alt="{{page.image-alt}}" />
+</div>
+{% endif %}
+
   </div>
   <div class="is-col is-70">
     {{content}}

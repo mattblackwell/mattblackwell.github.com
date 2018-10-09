@@ -4,10 +4,13 @@ slug: attitudes
 title: 'Explaining Attitudes from Behavior: A Cognitive Dissonance Approach'
 tags: ['Formal Theory','Published']
 category: research
-link: "/files/papers/attitudes.pdf"
-journal: "Journal of Politics, Forthcoming"
+pdf: "/files/papers/attitudes.pdf"
+journal: "Journal of Politics"
 image: "/images/End-Is-Near.jpg"
-date: 2018-01-01
+date: 2018-04-01
+volume: 80
+number: 2
+pages: 400-411
 image-alt: 'A classic example of cognitive dissonance'
 author: "Avidit Acharya, Matthew Blackwell, and Maya Sen"
 pubversion: https://www.journals.uchicago.edu/doi/10.1086/694541

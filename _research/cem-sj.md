@@ -4,7 +4,7 @@ slug: cem-sj
 title: 'cem: Coarsened Exact Matching in Stata'
 tags: ['Methods', 'Published']
 category: research
-link: '/files/papers/cemStata.pdf'
+pdf: '/files/papers/cemStata.pdf'
 date: 2009-12-01
 journal: 'Stata Journal'
 pages: '524-546'

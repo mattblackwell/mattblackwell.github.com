@@ -4,7 +4,7 @@ slug: sensitivity
 title: 'A Selection Bias Approach to Sensitivity Analysis for Causal Effects'
 tags: ['Methods', 'Published']
 category: research
-link: "/files/papers/causalsens.pdf"
+pdf: "/files/papers/causalsens.pdf"
 image: "/images/sens.png"
 date: 2014-04-01
 journal: 'Political Analysis'

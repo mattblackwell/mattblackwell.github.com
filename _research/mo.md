@@ -3,10 +3,10 @@ layout: project
 title: 'A Unified Approach to Measurement Error and Missing Data: Overview and Applications'
 category: research
 tags: ['Methods', 'Published']
-link: '/files/papers/measure.pdf'
+pdf: '/files/papers/measure.pdf'
 image: '/images/mo-continuum.png'
 date: 2015-05-01
-journal: 'Sociological Methods &amp; Research, Forthcoming'
+journal: 'Sociological Methods &amp; Research'
 image-alt: 'The missingness continuum'
 volume: 46
 number: 3

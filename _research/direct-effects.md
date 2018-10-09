@@ -4,7 +4,7 @@ slug: direct-effects
 title: 'Explaining Causal Findings Without Bias: Detecting and Assessing Direct Effects'
 tags: ['Methods', 'Published']
 category: research
-link: "/files/papers/direct-effects.pdf"
+pdf: "/files/papers/direct-effects.pdf"
 image: "/images/wright.png"
 journal: 'American Political Science Review'
 date: 2016-01-15

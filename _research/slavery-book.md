@@ -10,6 +10,8 @@ image: "/images/deep-roots.png"
 image-alt: 'Cotton farmers'
 publisher: "Princeton University Press"
 author: "Avidit Acharya, Matthew Blackwell, and Maya Sen"
+amazon: https://www.amazon.com/Deep-Roots-Southern-Princeton-Political/dp/0691176744/
+pubversion: https://press.princeton.edu/titles/11282.html
 ---
 
 *(with [Avi Acharya][] and [Maya Sen][], Princeton University Press, 2018)*

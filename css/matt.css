@@ -97,8 +97,8 @@ ul {
 }
 
 li {
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
 }
 
 li ul li {
@@ -135,6 +135,7 @@ li ul {
     /* text-align: center; */
     background-color: #3498db;
     margin-bottom: 1.65em;
+    font-size: 1.15em;
 }
 
 .is-navbar ul
@@ -144,7 +145,6 @@ li ul {
     list-style-type: none;
     text-align: left;
     width: 100%;
-    font-size: 1.15em;
     line-height: normal;
 }
 
@@ -156,13 +156,13 @@ li ul {
     list-style: none;
 }
 
-.is-navbar #active a { 
+.is-navbar a:active { 
     background-color: #3498db; /* #93CCC6;  */
     color:  #ecf0f1; /* #1A1F1E;  */
     margin: 0;
 }
 
-.is-navbar li a {
+.is-navbar a {
     text-decoration: none;
     color: #ecf0f1; /* #93CCC6; */
     padding: 0.2em 0.75em 0em 0.75em;
@@ -279,7 +279,8 @@ li ul {
 }
 
 .paperlist li {
-    margin-top: 0px;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
 }
 
 .project-title {

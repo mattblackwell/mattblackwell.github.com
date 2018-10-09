@@ -4,7 +4,7 @@ slug: amelia-jss
 title: 'Amelia II: A Program for Missing Data'
 tags: ['Methods', 'Published']
 category: research
-link: '/files/papers/amelia-jss.pdf'
+pdf: '/files/papers/amelia-jss.pdf'
 date: 2011-12-01
 journal: 'Journal of Statistical Software'
 pages: '1-47'

@@ -6,7 +6,7 @@ title: 'Telescope Matching: A Flexible Approach to Estimating Direct Effects'
 tags: ['Methods', 'Working Paper']
 category: research
 permalink: /research/telescope-matching/
-link: "/files/papers/telescope_matching.pdf"
+pdf: "/files/papers/telescope_matching.pdf"
 author: "Matthew Blackwell and Anton Strezhnev"
 ---
 

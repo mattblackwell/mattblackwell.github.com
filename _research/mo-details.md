@@ -3,10 +3,10 @@ layout: project
 title: 'A Unified Approach to Measurement Error and Missing Data: Details and Extensions'
 category: research
 tags: ['Methods', 'Published']
-link: '/files/papers/measured.pdf'
+pdf: '/files/papers/measured.pdf'
 image: '/images/mo.jpg'
 date: 2015-05-15
-journal: 'Sociological Methods &amp; Research, Forthcoming'
+journal: 'Sociological Methods &amp; Research'
 image-alt: 'Multiple Overimputation'
 volume: 46
 number: 3

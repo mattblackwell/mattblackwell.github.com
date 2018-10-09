@@ -20,10 +20,12 @@ title: Research
 <div class="is-col is-90 paperlist">
   <ul>
     {% for paper in year.items %}
-    <li> {{paper.author}}. "{{paper.title}}." {% if paper.link %} 
-      <a href="{{paper.link}}" class="boxlink">pdf</a>
-        {% endif %}
-        <a href="{{paper.url}}" class="boxlink">abstract+more</a>
+    <li> {{paper.author}}. "{{paper.title}}." {% if paper.pdf %} 
+      <a href="{{paper.pdf}}" class="boxlink">pdf</a>
+      {% endif %}
+      <a class="boxlink" href= "#" data-kube="toggle" data-target="#abs-{{paper.slug}}">abstract</a>
+      <a href="{{paper.url}}" class="boxlink">more info</a>
+      <div id="abs-{{paper.slug}}" class="is-hidden is-inset-16">{{paper.excerpt}}</div>
       </li>
       {% endfor %}
     </ul>
@@ -44,18 +46,16 @@ title: Research
     <ul>
       {% for paper in year.items %}
       <li> {% if paper.url %} 
-    {{paper.author}}. <a href="{{paper.url}}">{{paper.title}}</a>. {% if paper.publisher %} {{paper.publisher}} {% endif %}
+    {{paper.author}}. <em>{{paper.title}}</em>. {% if paper.publisher %} <b>{{paper.publisher}}</b> <a href="{{paper.url}}" class="boxlink">book site</a> {% endif %}
     {% else %}
     {{paper.title}} 
-    {% endif %}
+    {% endif %} 
       </li>
       {% endfor %}
     </ul>
   </div>
 </div>
 {% endfor %}
-
-
 
 
 
@@ -74,13 +74,16 @@ title: Research
       {% if paper.tags contains 'Published' %}
       <li>  
     {{paper.author}}. "{{paper.title}}." <b>{{paper.journal}}</b>{% if paper.volume %}, Vol. {{paper.volume}}{% endif %}{% if paper.number %}, No. {{paper.number}}{% endif %} ({{year.name}}){% if paper.pages %}: {{paper.pages}} {% endif %}
-    {% if paper.link %} <a href="{{paper.link}}" class="boxlink">pdf</a> {% endif %}         {% if paper.replication %}
+    {% if paper.pdf %} <a href="{{paper.pdf}}" class="boxlink">pdf</a> {% endif %}         {% if paper.replication %}
         <a href="{{paper.replication}}" class="boxlink">data</a>
         {% endif %}
         {% if paper.pubversion %}
         <a href="{{paper.pubversion}}" class="boxlink">publisher version</a>
         {% endif %}
- <a href="{{paper.url}}" class="boxlink">abstract+more</a>
+        <a class="boxlink" href= "#" data-kube="toggle" data-target="#abs-{{paper.slug}}">abstract</a>
+        <a href="{{paper.url}}" class="boxlink">more info</a>
+        <div id="abs-{{paper.slug}}" class="is-hidden is-inset-16">{{paper.excerpt}}</div>
+
       </li>
       {% endif %}
       {% endfor %}

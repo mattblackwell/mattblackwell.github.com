@@ -9,7 +9,7 @@ journal: 'Journal of the American Statistical Association'
 pages: '590-599'
 volume: 112
 number: 518
-link: "/files/papers/joint-iv.pdf"
+pdf: "/files/papers/joint-iv.pdf"
 image: "/images/joint-bicycle.jpeg"
 image-alt: "Joint effects push us forward"
 author: "Matthew Blackwell"

@@ -7,7 +7,7 @@ tags: ['Methods', 'Published']
 journal: "American Political Science Review"
 category: research
 permalink: /research/causal-tscs/
-link: "/files/papers/causal-tscs.pdf"
+pdf: "/files/papers/causal-tscs.pdf"
 image: "/images/tscs-dag.png"
 image-alt: 'TSCS data structure'
 author: "Matthew Blackwell and Adam Glynn"
