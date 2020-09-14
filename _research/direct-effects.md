@@ -15,6 +15,7 @@ pages: '512-529'
 author: "Avidit Acharya, Matthew Blackwell, and Maya Sen"
 replication: http://dx.doi.org/10.7910/DVN/VNXEM6
 pubversion: https://doi.org/10.1017/S0003055416000216
+software: "/software/direct-effects/"
 ---
 
 *(with [Avi Acharya][] and [Maya Sen][])*

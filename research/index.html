@@ -19,9 +19,19 @@ title: Research
 </div>
 <div class="is-col is-90 paperlist">
   <ul>
-    {% for paper in year.items %}
-    <li> {{paper.author}}. "{{paper.title}}." {% if paper.pdf %} 
+    {% for paper in year.items reversed %}
+    <li> {{paper.author}}. "{{paper.title}}."
+      {% if paper.pdf %} 
       <a href="{{paper.pdf}}" class="boxlink">pdf</a>
+      {% endif %}
+      {% if paper.software %} 
+      <a href="{{paper.software}}" class="boxlink">software</a>
+      {% endif %}
+      {% if paper.slides %} 
+      <a href="{{paper.slides}}" class="boxlink">slides</a>
+      {% endif %}
+      {% if paper.video %} 
+      <a href="{{paper.video}}" class="boxlink">video</a>
       {% endif %}
       <a class="boxlink" href= "#" data-kube="toggle" data-target="#abs-{{paper.slug}}">abstract</a>
       <a href="{{paper.url}}" class="boxlink">more info</a>
@@ -69,8 +79,8 @@ title: Research
     {{year.name}}
 </div>
 <div class="is-col is-90 paperlist">
-    <ul>
-      {% for paper in year.items %}
+  <ul>
+      {% for paper in year.items reversed %}
       {% if paper.tags contains 'Published' %}
       <li>  
     {{paper.author}}. "{{paper.title}}." <b>{{paper.journal}}</b>{% if paper.volume %}, Vol. {{paper.volume}}{% endif %}{% if paper.number %}, No. {{paper.number}}{% endif %} ({{year.name}}){% if paper.pages %}: {{paper.pages}} {% endif %}
@@ -79,6 +89,15 @@ title: Research
         {% endif %}
         {% if paper.pubversion %}
         <a href="{{paper.pubversion}}" class="boxlink">publisher version</a>
+        {% endif %}
+        {% if paper.software %} 
+        <a href="{{paper.software}}" class="boxlink">software</a>
+        {% endif %}
+        {% if paper.slides %} 
+        <a href="{{paper.slides}}" class="boxlink">slides</a>
+        {% endif %}
+        {% if paper.video %} 
+        <a href="{{paper.video}}" class="boxlink">video</a>
         {% endif %}
         <a class="boxlink" href= "#" data-kube="toggle" data-target="#abs-{{paper.slug}}">abstract</a>
         <a href="{{paper.url}}" class="boxlink">more info</a>

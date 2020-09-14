@@ -4,7 +4,7 @@ slug: joint-iv
 title: 'Instrumental Variable Methods for Conditional Effects and Causal Interaction in Voter Mobilization Experiments'
 tags: ['Methods', 'Published']
 category: research
-date: 2017-07-15
+date: 2017-06-01
 journal: 'Journal of the American Statistical Association'
 pages: '590-599'
 volume: 112

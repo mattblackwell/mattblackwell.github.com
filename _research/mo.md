@@ -5,7 +5,7 @@ category: research
 tags: ['Methods', 'Published']
 pdf: '/files/papers/measure.pdf'
 image: '/images/mo-continuum.png'
-date: 2015-05-01
+date: 2017-08-01
 journal: 'Sociological Methods &amp; Research'
 image-alt: 'The missingness continuum'
 volume: 46

@@ -5,7 +5,7 @@ category: research
 tags: ['Methods', 'Published']
 pdf: '/files/papers/measured.pdf'
 image: '/images/mo.jpg'
-date: 2015-05-15
+date: 2017-08-02
 journal: 'Sociological Methods &amp; Research'
 image-alt: 'Multiple Overimputation'
 volume: 46

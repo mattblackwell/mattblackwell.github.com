@@ -7,8 +7,8 @@ slug: software
 <div class ="category-name">
 <h3>Software Projects</h3>
 </div>
-{% for project in site.categories.software %}
-  <div class="project-title">
+{% for project in site.software %}
+<div class="project-title">
   </div>
   <div class="is-row">
   <div class="is-col is-30">
@@ -19,10 +19,14 @@ slug: software
 
 </div>
   <div class="is-col is-70">
-    <b>{{project.title}}</b>     {% if project.link %} 
-    <a href="{{project.link}}" class="boxlink">project page</a>
+    <b>{{project.title}}</b>
+    {% if project.cran %}<a href="{{project.cran}}" class="boxlink">CRAN</a>{% endif %}
+    {% if project.github %}<a href="{{project.github}}" class="boxlink">github</a>{% endif %}
+    {% if project.vignette %}<a href="{{project.vignette}}" class="boxlink">vignette</a>{% endif %}
+    {% if project.slides %}<a href="{{project.slides}}" class="boxlink">slides</a>{% endif %}
+    {% if project.link %} 
+    <a href="{{project.link}}" class="boxlink">more info</a>
     {% endif %}
-    
     {{project.content}}
   </div>
 </div>

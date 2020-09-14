@@ -15,6 +15,7 @@ author: "Matthew Blackwell"
 image-alt: 'The waving flag of sensitivity analysis'
 pubversion: https://doi.org/10.1093/pan/mpt006
 replication: http://hdl.handle.net/1902.1/21131
+software: "/software/causalsens/"
 ---
 
 The estimation of causal effects has a revered place in all fields of

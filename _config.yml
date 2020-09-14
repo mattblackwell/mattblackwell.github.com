@@ -1,7 +1,12 @@
 highlighter: rouge
 permalink: pretty
 markdown: kramdown
+url: "http://www.mattblackwell.org"
+description: "Matt Blackwell's website for research, teaching, and software"
+twitter_username: "matt_blackwell"
+image: "/images/blackwell-2015@2x.jpg"
 excerpt_separator: <!--more-->
+exclude: [Makefile]
 collections:
   teaching:
     output: true

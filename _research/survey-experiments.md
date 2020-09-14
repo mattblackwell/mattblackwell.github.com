@@ -10,7 +10,7 @@ image: "/images/door-to-door.jpg"
 image-alt: 'Surveying'
 date: 2018-10-01
 volume: 26
-issue: 4
+number: 4
 pages: 357-378
 author: "Avidit Acharya, Matthew Blackwell, and Maya Sen"
 replication: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KHE44F
