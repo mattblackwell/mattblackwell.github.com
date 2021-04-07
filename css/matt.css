@@ -8,6 +8,9 @@ body {
     border-top: 10px solid #3498db; /* #93CCC6; */
 }
 
+code {
+    font-family: 'Source Code Pro', monospace;
+}
 
 a:link { 
     color: #3498db; /* #93CCC6;  */
@@ -294,6 +297,16 @@ li ul {
     margin-bottom: 10px;
 }
 
+.project-date {
+    /* border-bottom: 1px dotted #E3DFBA; */
+    /* border-top: 1px solid #E3DFBA; */
+    color:  #2c3e50;/* #E3DFBA; */
+    padding: 0px;
+    font-size: 1.1em;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 
 
 
@@ -301,6 +314,7 @@ li ul {
     padding-bottom: 2em;
     margin-top: 10px;
 }
+
 
 .project img {
     padding-top: 10px;
