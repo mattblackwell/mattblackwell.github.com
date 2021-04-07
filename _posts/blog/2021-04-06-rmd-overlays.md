@@ -7,9 +7,13 @@ category: blog
 
 Over the last few years I have use a combination of [Rmarkdown][] and [beamer][] to create slides for my teaching. Overall, I love the ability to abstract away from overly crufty beamer code and write in a more compact and natural way. The downside is that I often run into frustration trying to get some part of the slides *just so*. 
 
-One such frustration comes with overlays for figures. Often, I want a single frame to contain multiple overlays with different `pdf` files replacing one another. A (moving) picture is worth a thousand words here, so this is the goal I'm trying to achieve:
+One such frustration comes with overlays for figures. Often, I want a single frame to contain multiple overlays with different PDF files replacing one another. A (moving) picture is worth a thousand words here, so this is the goal I'm trying to achieve:
 
 !["Animation" with Beamer](/images/beamer-overlay.gif)
+
+
+<!--more-->
+
 
 In this short GIF, I just recorded myself paging up and down through the PDF presentation generated from beamer. Something like this can be generated with LaTeX and beamer with the following code:
 
@@ -26,7 +30,7 @@ In this short GIF, I just recorded myself paging up and down through the PDF pre
 
 This is a very useful way to produce animations that I can use to demonstrate key statistical ideas visually. I'm not sure how useful the students find them, but they definitely help me clarify and connect with the topic without having to produce a lot of animation overhead. 
 
-A final nicety of this approach is that you use a simple trick to select which of the figures you would like to be shown when producing handout versions of the slides. Handout versions of slide decks are essential for students who want to mark them up and take notes or just have them for a reference later. I use a `Makefile` to automate the creation of the handout and regular versions of the slides so I can present with "click-throughs" but my students can reference the handout. To select the `pdf` for the handout version, there's a small trick:
+A final nicety of this approach is that you use a [simple trick](https://tex.stackexchange.com/a/129165) to select which of the figures you would like to be shown when producing handout versions of the slides. Handout versions of slide decks are essential for students who want to mark them up and take notes or just have them for a reference later. I use a `Makefile` to automate the creation of the handout and regular versions of the slides so I can present with "click-throughs" but my students can reference the handout. To select the `pdf` for the handout version, there's a small trick:
 
 ```tex
 \begin{frame}
@@ -79,11 +83,11 @@ plot(x3, y3, main = "Overlay 3")
 ```
 ```````
 
-This has a number of drawbacks. First, it is horrendously ugly and a lot of coding copying. Second, this will increment the frame number on each overlay, which somewhat defeats the whole point of the overlay. There are tricks to get around this, but none of them solve the last problem, which is that there is no way to select frames to be included or excluded from the handout version using RMarkdown (or really, `pandoc` since its what does the markdown -> latex conversion). Every time I went to make one of these, I ran into these fairly minor paper cuts. 
+This has a number of drawbacks. First, it is horrendously ugly and contains a lot of code copying. Second, this will increment the frame number on each overlay, which somewhat defeats the whole point of having the overlay in the first place. There are tricks to get around this, but none of them solve the last problem, which is that there is no way to select what frame should be shown in the handout version using RMarkdown (or really, `pandoc` since that's what actually does the markdown -> latex conversion). Every time I went to make one of these, I ran into these fairly minor paper cuts. 
 
 ## Hooked on Hooks
 
-After a while, the paper cuts become too much and you have to clean your desk (or maybe build a new desk? wait, maybe we need a new house?). This meant looking into the hooks system of `knitr` which is the core engine that processes the R chunks in an Rmd file to produce source, output, and plots in the document. I thought it would be a massive undertaking, but it turned out to be just a few lines of code to modify the `plot` hook. It looks like this:
+After a while, the paper cuts become too much and I was ready to [automate](https://xkcd.com/1319/) the process. This meant looking into the [hooks system](https://yihui.org/knitr/hooks/) of `knitr` which is the core engine that processes the R chunks in an Rmd file to produce source, output, and plots in the document. I thought it would be a massive undertaking, but it turned out to be just a few lines of code to modify the `plot` hook. It looks like this:
 
 ```r
 hook_plot <- knitr::knit_hooks$get("plot")
@@ -95,7 +99,7 @@ knitr::knit_hooks$set(
       i <- options$fig.cur
       hand <- as.numeric(ifelse(i == options$overlay.plot, 1, 0))
       bf <- paste0("\\only<", i, "| handout:", hand, ">{")
-      paste(c(bf, hook_plot(x, options), "}"), collapse = "\n")
+      paste(c(bf, knitr::hook_plot_tex(x, options), "}"), collapse = "\n")
     }
   }
 )
@@ -109,9 +113,15 @@ With this, we can turn this Rmd source
 ## Frame title
 
 ```{r fig, overlay.plot = 3}
-plot(x1, y1, main = "Overlay 1")
-plot(x2, y2, main = "Overlay 2")
-plot(x3, y3, main = "Overlay 3")
+set.seed(12345)
+x1 <- runif(100)
+y1 <- rnorm(100)
+cuts <- c(0, 0.25, 0.5, 0.75, 1)
+for (i in seq_along(cuts)) {
+  cols <- ifelse(x1 <= cuts[i], "indianred", "grey80")
+  plot(x1, y1, col = cols, pch = 19)
+  abline(v = cuts[i], lwd = 3, col = "indianred")
+}
 ```
 ``````
 into something like this beamer code:
@@ -127,9 +137,16 @@ into something like this beamer code:
 \only<3| handout:1>{
 \includegraphics{fig-3}
 }
+\only<4| handout:0>{
+\includegraphics{fig-4}
+}
+\only<5| handout:0>{
+\includegraphics{fig-5}
+}
 \end{frame}
 ```
 
+The actual tex output is more complicated in uninteresting ways. If you are interested in playing around with this your self, I posted a [gist](https://gist.github.com/mattblackwell/0d26d5c8f61f231570d61ccd62fe511f) of a  minimal working example and I have also posted [the PDF output of the example](/files/share/beamer-overlay.pdf). 
 
 [Rmarkdown]: https://rmarkdown.rstudio.com
 [beamer]: http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf
