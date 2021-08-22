@@ -1,17 +1,18 @@
 ---
 layout: project
 slug: lasso-inters
-date: 2020-09-01
+date: 2021-07-23
 title: 'Reducing Model Misspecification and Bias in the Estimation of Interactions'
 tags: ['Methods', 'Published']
 journal: "Political Analysis"
-pages: "Conditionally Accepted"
+pages: "Forthcoming"
 category: research
 permalink: /research/lasso-inters/
 pdf: "/files/papers/lasso-inters.pdf"
 author: "Matthew Blackwell and Michael Olson"
 slides: /files/papers/lasso_ints_applied_stats.pdf
 software: "https://github.com/mattblackwell/inters"
+pubversion: https://www.cambridge.org/core/journals/political-analysis/article/abs/reducing-model-misspecification-and-bias-in-the-estimation-of-interactions/DE5AB7EB87CA53142448D7F55D6517DB
 ---
 
 *(with [Michael Olson][])*
