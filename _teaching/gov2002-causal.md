@@ -2,23 +2,24 @@
 layout: project
 slug: gov2002-causal
 title: 'Causal Inference'
-tags: ['Methods', 'Harvard']
+tags: ['Methods', 'Harvard', 'Graduate']
 category: teaching
-permalink: /teaching/gov2002/
-syllabus: '/files/teaching/gov2002-15f-syllabus.pdf'
+site: 'https://mattblackwell.github.io/gov2003-f21-site/'
+syllabus: 'https://mattblackwell.github.io/gov2003-f21-site/syllabus.html'
 image: '/images/tweedle.jpg'
 image-alt: 'Matching'
 coursename: "Government 2002"
-date: 2015-09-01
+date: 2022-09-01
 ---
 
 This is the third course in a PhD-level quantitative methods sequence and introduces students to both the theory and the practice behind making these kinds of causal inferences. We will cover causal identification, potential outcomes, experiments, matching, regression, difference-in-differences, instrumental variables estimation, regression discontinuity designs, sensitivity analysis, dynamic causal inference, and more. The course draws upon examples from political science, economics, sociology, public health, and public policy. Taught with R.
 
 <!--more-->
 
-* [Syllabus][syll]
 
-Lecture notes:
+* [Old Syllabus][syll]
+
+Old lecture notes:
 
 * [1 - Introduction][s01intro]
 * [2 - Randomized Experiments][s02rand]

@@ -5,9 +5,38 @@ title: Teaching
 ---
 
 <div class ="category-name">
-<h3>Courses</h3>
+<h3>Undergraduate Courses</h3>
 </div>
-{% assign wpByYear = site.teaching | sort: "date" | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% assign wpByYear = site.teaching | where: "tags", "Undergraduate" | sort: "date" | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% for year in wpByYear reversed %}
+<div class="is-row">
+<div class="is-col is-10 paperlist">
+  {{year.name}}
+</div>
+<div class="is-col is-90 paperlist">
+  <ul>
+    {% for paper in year.items %}
+    <li> <b>{{paper.title}}</b> {% if paper.syllabus %} 
+      <a href="{{paper.syllabus}}" class="boxlink">syllabus</a>
+      {% endif %}
+      {% if paper.site %}
+      <a href="{{paper.site}}" class="boxlink">course website</a>
+      {% else %}
+      <a href="{{paper.url}}" class="boxlink">course materials</a>
+      {% endif %}
+    </li>
+    
+    <li>{{paper.excerpt}}</li>
+      {% endfor %}
+    </ul>
+</div>
+</div>
+{% endfor %}
+
+<div class ="category-name">
+<h3>Graduate Courses</h3>
+</div>
+{% assign wpByYear = site.teaching | where: "tags", "Graduate" | sort: "date" | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% for year in wpByYear reversed %}
 <div class="is-row">
 <div class="is-col is-10 paperlist">
@@ -19,11 +48,16 @@ title: Teaching
     <li> <b>{{paper.title}}</b> {% if paper.syllabus %} 
       <a href="{{paper.syllabus}}" class="boxlink">syllabus</a>
         {% endif %}
+      {% if paper.site %}
+      <a href="{{paper.site}}" class="boxlink">course website</a>
+      {% else %}
       <a href="{{paper.url}}" class="boxlink">course materials</a>
+      {% endif %}
     </li>
     <li>{{paper.excerpt}}</li>
       {% endfor %}
     </ul>
 </div>
 </div>
+
 {% endfor %}

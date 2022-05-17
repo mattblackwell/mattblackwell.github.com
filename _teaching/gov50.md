@@ -2,7 +2,7 @@
 layout: project
 slug: gov50
 title: Intro to Political Science Research Methods
-tags: ['Methods', 'Harvard']
+tags: ['Methods', 'Harvard', 'Undergraduate']
 category: teaching
 syllabus: '/files/teaching/gov50-syllabus2018.pdf'
 permalink: /teaching/gov50/
