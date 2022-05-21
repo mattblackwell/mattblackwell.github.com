@@ -2,7 +2,7 @@
 layout: project
 slug: did_cde
 date: 2022-05-15
-title: 'Multiply Robust Estimation of Controlled Direct Effects under Unmeasured Confounding Using a Difference-in-differences Design: An Application to Reducing Intergroup Prejudice'
+title: 'Difference-in-differences Designs for Controlled Direct Effects: An Application to Reducing Intergroup Prejudice'
 tags: ['Methods', 'Working Paper']
 category: research
 permalink: /research/did_cde/
