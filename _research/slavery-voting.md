@@ -2,7 +2,7 @@
 layout: project
 slug: slavery
 title: 'A Culture of Disenfranchisement: How American Slavery Continues to Affect Voting Behavior'
-tags: ['American Politics', 'Working Paper'] 
+tags: ['American Politics', 'Defunct Paper'] 
 category: research
 pdf: "/files/papers/slavery-voting.pdf"
 image: "/images/civil-rights-protesters.jpg"
