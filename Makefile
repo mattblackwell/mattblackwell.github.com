@@ -14,10 +14,10 @@ clean:
 	rm -rf _site
 
 build:
-	jekyll build
+	bundle exec jekyll build
 
 serve:
-	jekyll serve
+	bundle exec jekyll serve
 
 deploy: build
 	rsync --exclude='.DS_Store' -Prvzce 'ssh -p 22' $(PUBLIC_DIR) $(SSH_USER):$(DOCUMENT_ROOT) --delete-after
