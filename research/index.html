@@ -44,7 +44,7 @@ title: Research
 {% endfor %}
 
 <div class ="category-name">
-<h3>Book</h3>
+<h3>Books</h3>
 </div>
 {% assign bookByYear = site.research | where: "tags", "Book" | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% for year in bookByYear reversed%}
@@ -56,7 +56,7 @@ title: Research
     <ul>
       {% for paper in year.items %}
       <li> {% if paper.url %} 
-    {{paper.author}}. <em>{{paper.title}}</em>. {% if paper.publisher %} <b>{{paper.publisher}}</b> <a href="{{paper.url}}" class="boxlink">book site</a> {% endif %}
+    {{paper.author}}. {% if paper.site %} <em><a href="{{paper.site}}">{{paper.title}}.</a></em>{% else %} <em>{{paper.title}}.</em>{% endif %} {% if paper.publisher %} <b>{{paper.publisher}}</b> {% else %} Textbook manuscript {% endif %} <a href="{{paper.url}}" class="boxlink">more info</a>
     {% else %}
     {{paper.title}} 
     {% endif %} 

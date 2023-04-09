@@ -4,7 +4,7 @@ slug: gov2002-quant-ii
 title: 'Quantitative Social Science Methods II'
 tags: ['Methods', 'Harvard', 'Graduate']
 category: teaching
-syllabus: 'https://gov2002.mattblackwell.org/syllabus/'
+syllabus: 'https://gov2002.mattblackwell.org/syllabus.html'
 site: 'https://gov2002.mattblackwell.org'
 image: '/images/old-computer.jpg'
 image-alt: 'Teaching methods in action'

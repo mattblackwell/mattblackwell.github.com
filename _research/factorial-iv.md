@@ -1,7 +1,7 @@
 ---
 layout: project
 slug: factorial-iv
-date: 2021-08-22
+date: 2023-02-22
 title: 'Noncompliance and instrumental variables for 2^K factorial experiments'
 tags: ['Methods', 'Published']
 journal: "Journal of the American Statistical Association"

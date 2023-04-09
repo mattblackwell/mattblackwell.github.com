@@ -1,11 +1,13 @@
 ---
 layout: project
 slug: telescope-matching
-date: 2021-08-31
+date: 2022-01-31
 title: 'Telescope Matching for Reducing Model Dependence in the Estimation of the Effects of Time-varying Treatments: An Application to Negative Advertising'
 tags: ['Methods', 'Published']
 journal: "Journal of the Royal Statistical Society (Series A)"
-pages: "Forthcoming"
+pages: "377-399"
+volume: 185
+number: 1
 category: research
 permalink: /research/telescope-matching/
 pdf: "/files/papers/telescope_matching.pdf"

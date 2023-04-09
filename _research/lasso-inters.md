@@ -1,11 +1,13 @@
 ---
 layout: project
 slug: lasso-inters
-date: 2021-07-23
+date: 2022-07-23
 title: 'Reducing Model Misspecification and Bias in the Estimation of Interactions'
 tags: ['Methods', 'Published']
 journal: "Political Analysis"
-pages: "Forthcoming"
+pages: "495-514"
+volume: 30
+number: 4
 category: research
 permalink: /research/lasso-inters/
 pdf: "/files/papers/lasso-inters.pdf"

@@ -13,6 +13,9 @@ layout: default
   <ul class="is-unstyled">
     {% if page.pdf %} <li><a href="{{page.pdf}}" class="boxlink">pdf</a></li> {% endif %}   
     {% if page.syllabus %} <li><a href="{{page.syllabus}}" class="boxlink">syllabus</a></li> {% endif %}
+    {% if page.site %}
+    <li><a href="{{page.site}}" class="boxlink">website</a></li>
+    {% endif %}
     {% if page.replication %}
     <li><a href="{{page.replication}}" class="boxlink">data</a></li>
     {% endif %}
