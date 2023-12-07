@@ -25,6 +25,6 @@ We show that contemporary differences in political attitudes across counties in 
 
 
 [sens]:  http://www.mattblackwell.org/files/papers/slavery.pdf
-[Avi Acharya]: http://stanford.edu/~avidit/
+[Avi Acharya]: https://www.aviditacharya.com
 [Maya Sen]: https://scholar.harvard.edu/msen
 [PIEP talk slides]: /files/papers/empiricaltalk-piep.pdf
