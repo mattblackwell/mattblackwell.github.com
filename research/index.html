@@ -20,7 +20,7 @@ title: Research
 <div class="is-col is-90 paperlist">
   <ul>
     {% for paper in year.items reversed %}
-    <li> {{paper.author}}. "{{paper.title}}."
+    <li> {{paper.author}}. "{{ paper.title }}."
       {% if paper.pdf %} 
       <a href="{{paper.pdf}}" class="boxlink">pdf</a>
       {% endif %}

@@ -1,8 +1,8 @@
 ---
 layout: project
 slug: psfe
-date: 2021-05-07
-title: 'Adjusting for Unmeasured Confounding in Marginal Structural Models with Propensity-Score Fixed Effects'
+date: 2024-02-05
+title: "The Effect of Political Advertising after Citizen's United: Adjusting for Unmeasured Confounding in Marginal Structural Models"
 tags: ['Methods', 'Working Paper']
 category: research
 permalink: /research/psfe/
@@ -12,6 +12,6 @@ author: "Matthew Blackwell and Soichiro Yamauchi"
 
 *(with [Soichiro Yamauchi][])*
 
-Marginal structural models are a popular tool for investigating the effects of time-varying treatments, but they require an assumption of no unobserved confounders between the treatment and outcome. With observational data, this assumption may be difficult to maintain, and in studies with panel data, many researchers use fixed effects models to purge the data of time-constant unmeasured confounding. Unfortunately, traditional linear fixed effects models are not suitable for estimating the effects of time-varying treatments, since they can only estimate lagged effects under implausible assumptions. To resolve this tension, we a propose a novel inverse probability of treatment weighting estimator with propensity-score fixed effects to adjust for time-constant unmeasured confounding in marginal structural models of fixed-length treatment histories. We show that these estimators are consistent and asymptotically normal when the number of units and time periods grow at a similar rate. Unlike traditional fixed effect models, this approach works even when the outcome is only measured at a single point in time as is common in  marginal structural models. We apply these methods to estimating the effect of negative advertising on the electoral success of candidates for statewide offices in the United States.
+  Corporations, unions, and other interest groups have become key sponsors of television advertising in United States elections after the Supreme Court's decision in *Citizen's United v. FEC* that eliminated restrictions on such spending. This paper estimates the partisan effects of  ads sponsored by these groups to obtain a more complete picture of voter behavior and electoral politics. Advertising strategies vary over the course of the campaign, and so marginal structural models are a natural tool to estimate these effects. Unfortunately, this approach requires an assumption of no unobserved confounders between the treatment and outcome, which may not be plausible with observational electoral data. To address this, we propose a novel inverse probability of treatment weighting estimator with propensity-score fixed effects to adjust for time-constant unmeasured confounding in marginal structural models of fixed-length treatment histories. We show that these estimators are consistent and asymptotically normal when the number of units and time periods grow at a similar rate. Unlike traditional fixed effect models, this approach works even when the outcome is only measured at a single point in time as in our setting, though the method does rely on some degree of treatment switching within units. Against conventional wisdom, we find that interest group ads are only effective when run by groups supporting Democratic candidates and that these effects are most prominent after Donald Trump became a presidential candidate in 2016.
 
 [Soichiro Yamauchi]: https://soichiroy.github.io

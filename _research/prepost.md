@@ -1,7 +1,7 @@
 ---
 layout: project
 slug: prepost
-date: 2023-06-01
+date: 2024-02-08
 title: 'Priming bias versus post-treatment bias in experimental designs'
 tags: ['Methods', 'Working Paper']
 category: research
